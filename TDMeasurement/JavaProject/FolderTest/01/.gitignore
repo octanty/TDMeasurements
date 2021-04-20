@@ -1,0 +1,49 @@
+# NetBeans specific #
+/Survive-POM/Survive-Java-Core/target/
+/Survive-POM/Survive-Java-API/target/
+/Survive-POM/Survive-Web/target/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# Class Files #
+*.class
+*.txt
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+*.log
+
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Custom for Visual Studio
+*.cs     diff=csharp
+*.sln    merge=union
+*.csproj merge=union
+*.vbproj merge=union
+*.fsproj merge=union
+*.dbproj merge=union
+
+
+# Standard to msysgit
+*.doc  diff=astextplain
+*.DOC  diff=astextplain
+*.docx diff=astextplain
+*.DOCX diff=astextplain
+*.dot  diff=astextplain
+*.DOT  diff=astextplain
+*.pdf  diff=astextplain
+*.PDF  diff=astextplain
+*.rtf  diff=astextplain
+*.RTF  diff=astextplain
+
+!/Survive-POM/Survive-Java-API/nb-configuration.xml
+/Survive-POM/Survive-REST-Client/target/
+/Survive-POM/Surive-Commons/nbproject/private/

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>cz.muni.fi.pa165.fleetmanagement</groupId>
+    <artifactId>PA165-FleetManagement</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>PA165-FleetManagement</name>
+    <modules>
+        <module>PA165-FleetManagement-api</module>
+        <module>PA165-FleetManagement-impl</module>
+        <module>PA165-FleetManagement-web</module>
+        <module>PA165-FleetManagement-client</module>
+    </modules>
+    
+    <developers>
+        <developer>
+            <name>Jan Svec</name>
+            <email>420072@mail.muni.cz</email>
+            <url>https://www.muni.cz/people/420072</url>
+            <organization>FI MU</organization>
+        </developer>
+        <developer>
+            <name>Lubomir Lacika</name>
+            <email>418110@mail.muni.cz</email>
+            <url>https://www.muni.cz/people/418110</url>
+            <organization>FI MU</organization>
+        </developer>
+        <developer>
+            <name>Eduard Dobai</name>
+            <email>420065@mail.muni.cz</email>
+            <url>https://www.muni.cz/people/420065</url>
+            <organization>FI MU</organization>
+        </developer>
+        <developer>
+            <name>Peter Pavlik</name>
+            <email>418125@mail.muni.cz</email>
+            <url>https://www.muni.cz/people/418125</url>
+            <organization>FI MU</organization>
+        </developer>
+    </developers>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.test.skip>true</maven.test.skip>
+    </properties>
+
+    <build>
+        <plugins>
+            <!-- Java language version -->
+            <plugin>
+                <version>2.5.1</version>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.2</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>

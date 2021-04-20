@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+    <f:loadBundle basename="com.pa165.mlib.Messages" var="msg"/>
+
+    <h:head>
+        <title>Musewaves</title>
+        <meta http-equiv="content-type" content="text/xhtml; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" media="screen" href="#{facesContext.externalContext.request.contextPath}/style.css"/>
+    </h:head>
+
+    <h:body>
+        <div id="header">
+            <h:graphicImage value="/resources/logo.png" width="466" height="105" />
+        </div>
+        <div id="menu">
+            <h:form>
+                <h:button value="#{msg.home}" outcome="/home" class="menu_button"/>
+                <h:button value="#{msg.genres}" outcome="/genres" class="menu_button"/>
+                <h:button value="#{msg.artists}" outcome="/artists" class="menu_button"/>
+                <h:button value="#{msg.albums}" outcome="/albums" class="menu_button"/>
+                <h:button value="#{msg.songs}" outcome="/songs" class="menu_button"/>
+                <h:button value="#{msg.login}" outcome="/login" class="menu_button" rendered="#{!loginManager.loggedIn}" style="margin-left:5px;"/>
+                <h:button value="#{msg.users}" outcome="/administration/users" class="menu_button" rendered="#{loginManager.loggedIn and facesContext.externalContext.isUserInRole('ADMIN')}"/>
+                <h:outputText value="#{msg.loggedas} #{loginManager.user.username}" rendered="#{loginManager.loggedIn}" style="color:white;margin-left:5px;"/>
+                <h:commandButton id="logout" value="#{msg.logout}"
+                                 action="#{loginManager.logout}" rendered="#{loginManager.loggedIn}" style="margin-left:5px;" />
+            </h:form>
+        </div>
+        <div id="container">
+            <div id="main_content">
+                <ui:insert name="content">Default content</ui:insert>
+            </div>
+
+            <hr class="cleaner"/>
+
+        </div>
+    </h:body>
+</html>

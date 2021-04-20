@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <body>
+        <ui:composition template="/template.xhtml">
+            <ui:define name="content">
+                <h:messages globalOnly="true" class="message"/>
+                
+                <c:if test="#{not empty param['artist_name']}">
+                    <c:set var="a" value="#{artistManager.init(param['artist_name'])}" scope="request" />
+                </c:if>
+                <c:if test="#{empty param['artist_name']}">
+                    <c:set var="a" value="#{artistManager.init()}" scope="request" />
+                </c:if>
+
+                <h1>#{a.name}</h1>
+                
+                <h:form>
+                    <h:inputHidden value="#{artistManager.artistTO.name}" required="true" />
+
+                    <h:commandButton value="#{msg.remove}" action="#{artistManager.remove}" rendered="#{loginManager.loggedIn}" />
+                </h:form>
+                
+                <h2>#{msg.producedAlbums}</h2>
+                
+                <h:form>
+                    <c:set var="albums" value="#{albumManager.getAlbumsWithArtist(a)}" scope="request" />
+                    <h:dataTable value="#{albums}" var="a" rendered="#{not empty albums}">
+                        <h:column>
+                            <f:facet name="header">#{msg.title}</f:facet>
+                                
+                            <h:button value="#{a.title}" outcome="/album_detail">
+                                    <f:param name="album_name" value="#{a.title}"/>
+                            </h:button>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">#{msg.released}</f:facet>
+                                #{a.released}
+                        </h:column>
+                    </h:dataTable>
+                </h:form>
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>

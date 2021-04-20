@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+">
+
+    <context:component-scan base-package="com.muni.fi.pa165"/>
+    
+
+    
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="persistenceUnitName" value="ProjectPU"/>
+    </bean>
+
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory"/>
+    </bean>
+    
+      
+    <bean id="translatorWeb" class="org.springframework.orm.hibernate4.HibernateExceptionTranslator"/>
+     
+     
+    <bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
+    
+    <bean id="mapper" class="org.dozer.DozerBeanMapper">
+        <property name="mappingFiles">
+            <list>
+                <value>AreaMapper.xml</value>
+                <value>MonsterAreaMapper.xml</value>
+                <value>WeaponMapper.xml</value>
+                <value>SystemUserMapper.xml</value>	
+                <value>MonsterMapper.xml</value>
+                <value>MonsterWeaponMapper.xml</value>
+                <value>MonsterWeaponPKMapper.xml</value>
+                <value>MonsterAreaPKMapper.xml</value>
+            </list>
+        </property>
+    </bean>
+    
+    
+    <bean id="userDataSource"
+    class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+      <property name="driverClassName" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="url" value="jdbc:derby://localhost:1527/pa165;create=true"/>
+      <property name="username" value="pa165"/>
+      <property name="password" value="pa165"/>     
+</bean>
+      
+    
+</beans>

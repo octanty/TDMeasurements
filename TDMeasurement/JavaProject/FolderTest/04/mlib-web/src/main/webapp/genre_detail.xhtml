@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <body>
+        <ui:composition template="/template.xhtml">
+            <ui:define name="content">
+                <h:messages globalOnly="true" class="message"/>
+                
+                <c:if test="#{not empty param['genre_name']}">
+                    <c:set var="a" value="#{genreManager.init(param['genre_name'])}" scope="request" />
+                </c:if>
+                <c:if test="#{empty param['genre_name']}">
+                    <c:set var="a" value="#{genretManager.init()}" scope="request" />
+                </c:if>
+
+                <h1>#{genreManager.genreTO.name}</h1>
+                
+                <h:form>
+                    <h:commandButton value="#{msg.remove}" action="#{genreManager.remove}" rendered="#{facesContext.externalContext.isUserInRole('ADMIN')}" />
+                </h:form>
+                
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>
+

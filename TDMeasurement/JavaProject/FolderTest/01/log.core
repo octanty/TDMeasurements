@@ -1,0 +1,278 @@
+c26b24b847f654f8259e657386642156b2cc2f2f|Irina|Thu Jan 30 15:08:59 2014|Irina|Thu Jan 30 15:08:59 2014|Alternative controls with sliders
+58276fdd16316f3411a703ac78562ad4d011d8d2|Irina|Wed Jan 29 23:16:46 2014|Irina|Wed Jan 29 23:16:46 2014|Alternative controls with sliders
+4255bff39f7659e25def040333f5ba3a786cede4|Auronspan|Wed Jan 29 19:49:44 2014|Auronspan|Wed Jan 29 19:49:44 2014|Merge branch 'master' of https://github.com/Auronspan/Survive
+3ecc84a13f09a390ba2fd7ec6f084b663033404b|Auronspan|Wed Jan 29 19:49:35 2014|Auronspan|Wed Jan 29 19:49:35 2014|Modified authentication paramters
+1dcc700e7c1416ad6b5e2f68525b937ff7edf923|Irina|Wed Jan 29 19:35:14 2014|Irina|Wed Jan 29 19:35:14 2014|Alternative controls with sliders for monster form
+b13e131838b8cae78214eeab42a44214b9aaf8c3|agentirishka|Wed Jan 29 19:15:44 2014|agentirishka|Wed Jan 29 19:15:44 2014|Merge branch 'master' of https://github.com/Auronspan/Survive.git
+ed06337bd5a9e909662a8b5e68822ae1ed6626d4|Irina|Wed Jan 29 19:15:21 2014|Irina|Wed Jan 29 19:15:21 2014|Alternative controls with sliders
+0469e523e859df36ff20a6a2b006acf24f65e76a|Auronspan|Wed Jan 29 18:05:40 2014|Auronspan|Wed Jan 29 18:05:40 2014|Implemented service layer authentication
+593b547b8b5fba7335bdec4a10fc2f9bd7158fc9|Auronspan|Wed Jan 29 00:27:22 2014|Auronspan|Wed Jan 29 00:27:22 2014|Implemented complete revamp of user dao, dto, services and presentation layer. Enabled user creation and deletion as well as password hash
+eb68cf4e1c7a5751bc9fef0186d74a0f0719944d|Auronspan|Mon Jan 27 23:16:47 2014|Auronspan|Mon Jan 27 23:16:47 2014|Started some editing of login feature
+157be9838507e226556edb36d777d767f5191df4|Auronspan|Mon Jan 27 22:38:16 2014|Auronspan|Mon Jan 27 22:38:16 2014|Merge branch 'master' of https://github.com/Auronspan/Survive
+3899af6118d1894a008b5baba1d8281e5befa525|Auronspan|Mon Jan 27 22:38:07 2014|Auronspan|Mon Jan 27 22:38:07 2014|Added service layer authentication
+11534c550422c526cfd481aec7392657c4ad1a7b|Irina|Mon Jan 27 22:13:56 2014|Irina|Mon Jan 27 22:13:56 2014|Fixing bugs Alternative controls
+a6b45763cdd18af456b39ff72b3f2603adaf316c|Auronspan|Mon Jan 27 21:18:21 2014|Auronspan|Mon Jan 27 21:18:21 2014|Merge branch 'master' of https://github.com/Auronspan/Survive
+b30a6122020a3c5a21cc494acd83c9b49f64052d|Auronspan|Mon Jan 27 21:17:15 2014|Auronspan|Mon Jan 27 21:17:15 2014|Changes to user page
+d0dbbd896db4969fafbcf7dfe19f3960c4266891|Auronspan|Mon Jan 27 21:15:44 2014|Auronspan|Mon Jan 27 21:15:44 2014|
+440ca16afc6fc91c9d5dbb39f47b0ae48b5a6785|Irina|Mon Jan 27 20:33:17 2014|Irina|Mon Jan 27 20:33:17 2014|Fixing bugs Alternative controls
+155b981b75c26206002439d695dd4a6d4ef9367f|Irina|Mon Jan 27 15:25:55 2014|Irina|Mon Jan 27 15:25:55 2014|Localization for login and logout and Alternative controls from user point of view - (locations\form.jsp)
+4ba4e1038fc170bfc9f9e2f580613877e41e1bdd|Irina|Mon Jan 27 14:51:49 2014|Irina|Mon Jan 27 14:51:49 2014|Alternative controls from user point of view - (efficiencies\form.jsp)
+2bc79949feed2db18e28a9f96df12a38ea9df5ee|Irina|Mon Jan 27 14:38:11 2014|Irina|Mon Jan 27 14:38:11 2014|Alternative controls from user point of view - (weapon\form.jsp)
+704ae9e9a0b1c5073be0745fe57ba9e2526accc4|Irina|Mon Jan 27 14:29:01 2014|Irina|Mon Jan 27 14:29:01 2014|Alternative controls from user point of view - (monster\form.jsp)
+e95ce2430161ee9ce3bf786cde7bfcdb7b66c2cf|michalvinkler|Sun Jan 26 18:45:44 2014|michalvinkler|Sun Jan 26 18:45:44 2014|Simplified REST client, delegated REST save logic to lower layers.
+4e0e4c7e8bf0e859699e9c1a41a265f817eaf03a|Auronspan|Sun Jan 26 02:06:25 2014|Auronspan|Sun Jan 26 02:06:25 2014|Implemented authentication for guest, user and admin. Added 404, 403 pages and fixed other auth issues
+a76d9cd6644e384e3d927d81b926b001a05eb3b5|Auronspan|Fri Jan 24 18:26:16 2014|Auronspan|Fri Jan 24 18:26:16 2014|Implemented Spring Security and Custom form login
+1ec73a6f436d1fa094d91401a2a664cd1d6e0d5e|Auronspan|Sat Dec 14 00:02:46 2013|Auronspan|Sat Dec 14 00:02:46 2013|Update README.md
+4168385a8b0299f19f0827f87bdcc784b3ad4b82|Auronspan|Fri Dec 13 23:56:07 2013|Auronspan|Fri Dec 13 23:56:07 2013|Update README.md
+83411a893fa6bbabb97059ffb19d01d7b57f98e9|auronmatrix|Fri Dec 13 23:35:07 2013|auronmatrix|Fri Dec 13 23:35:35 2013|Fixed Irinas tests
+8f31424a3eec63aa4e07b425f097d3be3b397a8f|michalvinkler|Fri Dec 13 23:22:36 2013|michalvinkler|Fri Dec 13 23:22:38 2013|REST client stderr fixed.
+b98eae5dd58be8564153323f5116af5a251b8550|michalvinkler|Fri Dec 13 22:35:44 2013|michalvinkler|Fri Dec 13 22:35:46 2013|README.md update + minor REST client bugfix
+5987c03f45d8fd908099d3c4ef9edf676c946512|Auronspan|Fri Dec 13 21:45:01 2013|Auronspan|Fri Dec 13 21:45:01 2013|Update README.md
+d3a0e577393cf056228835ce82cff7cd37a1cbb0|michalvinkler|Fri Dec 13 12:46:36 2013|michalvinkler|Fri Dec 13 12:46:36 2013|Merge branch 'master' of https://github.com/Auronspan/Survive
+6e8f8ad0bac4721a65aed257323d945bc36f9f1b|michalvinkler|Fri Dec 13 12:40:38 2013|michalvinkler|Fri Dec 13 12:46:16 2013|Fixed the case when the server is not available. Fixed README.md
+bbfb7ded27b74747fec17c996551cec584a524b0|michalvinkler|Fri Dec 13 12:40:38 2013|michalvinkler|Fri Dec 13 12:40:41 2013|Fixed the case when the server is not available.
+55f2a7b6e441f7c017720e280f27ede45b6c2627|michalvinkler|Fri Dec 13 12:28:12 2013|michalvinkler|Fri Dec 13 12:28:12 2013|Merge branch 'master' of https://github.com/Auronspan/Survive
+0dc1e910c1a496f74f28e31e06964bd595911c3b|michalvinkler|Fri Dec 13 12:22:29 2013|michalvinkler|Fri Dec 13 12:27:39 2013|Fixed Web resources/StripesResources.properties
+9aadb73cafe5aa8f252b89a302ae47176ae899bc|michalvinkler|Fri Dec 13 12:22:29 2013|michalvinkler|Fri Dec 13 12:22:33 2013|Fixed Web resources/StripesResources.properties
+68487569b73e68ddeb939be27f4569589d5c881c|michalvinkler|Fri Dec 13 12:06:01 2013|michalvinkler|Fri Dec 13 12:06:20 2013|Rest client Some other refactoring
+44f9836a4c4e7f73e54374ae6811b14b73881e14|Irina|Fri Dec 13 02:02:58 2013|Irina|Fri Dec 13 02:02:58 2013|Added Tests and deleted GenericDaoImpl
+79df2ce213197f471627f8703817facd0b42b640|Auronspan|Thu Dec 12 18:17:54 2013|Auronspan|Thu Dec 12 18:17:54 2013|Added test
+1053c593e299c22dbec37db6bcf7dc4c691abe76|Auronspan|Thu Dec 12 18:09:21 2013|Auronspan|Thu Dec 12 18:09:21 2013|Update README.md
+670c61abbe01975c1c1b4d8f5a12d35cfa07a99f|Auronspan|Thu Dec 12 18:08:20 2013|Auronspan|Thu Dec 12 18:08:20 2013|Update README.md
+589875f455409af3d4d1368c92010cf2de046f17|auronmatrix|Thu Dec 12 17:40:34 2013|auronmatrix|Thu Dec 12 17:40:34 2013|Added JaCoCo for code coverage to Java API and Java Core
+8cec05b52e31cf6d9844f9f986750c59284e7d84|auronmatrix|Thu Dec 12 17:00:50 2013|auronmatrix|Thu Dec 12 17:00:50 2013|Added JavaDocs and renamed non conventional entity classes
+6affd59fb11d24c80dc27ee8c4f2d611e1e185f4|auronmatrix|Thu Dec 12 16:28:46 2013|auronmatrix|Thu Dec 12 16:28:46 2013|Fixed and organized imports
+16ca33aeb77f9d5e72564293b9385eb28ac72065|auronmatrix|Thu Dec 12 16:22:26 2013|auronmatrix|Thu Dec 12 16:22:26 2013|Fixed logging to be only console logging. Removed unused Logback.xml file
+ccd54471997f96ead13aa9420ea1bedc470d2420|auronmatrix|Thu Dec 12 15:26:29 2013|auronmatrix|Thu Dec 12 15:26:29 2013|Cleared unused classes and changed context name of logger in Web
+78a6f78165d26f142be8a676e8bb8a189a2f56ab|auronmatrix|Thu Dec 12 14:21:51 2013|auronmatrix|Thu Dec 12 14:21:51 2013|Moved Dto dependencies to API. Added exception handling for REST services
+a6c98c4c2276edda94071119657aa20aaa0c87ea|Irina|Thu Dec 12 00:26:37 2013|Irina|Thu Dec 12 00:26:37 2013|Removed Commented-out code from Survive-Web-Presentation
+4d565e2fc4213b5366dd998551450bf41fee3257|Irina|Wed Dec 11 23:59:23 2013|Irina|Wed Dec 11 23:59:23 2013|Removed Commented-out code from Survive-Java-Persistence and API
+0461868ecb578522fa5521655fa71ea40c88605b|Irina|Wed Dec 11 23:29:55 2013|Irina|Wed Dec 11 23:29:55 2013|fixed tests in MonsterWeaponServiceImpl
+b163810cf90cf9f4f886e3699cddfb30ddd88c2c|Irina|Wed Dec 11 23:14:03 2013|Irina|Wed Dec 11 23:14:03 2013|fixed tests in MonsterAreaServiceImpl
+dd1aebdf4fcbafee1fd7e37f2bc8c07957394637|Irina|Wed Dec 11 21:54:04 2013|Irina|Wed Dec 11 21:54:04 2013|Created tests for MonsterAreaDao and fixed MonsterAreaDaoImpl
+b3bed309967f54741c1d20d5289c06ecd5e2b80e|Irina|Wed Dec 11 20:10:46 2013|Irina|Wed Dec 11 20:10:46 2013|Created test for MonsterWeaponDao
+caeffd3d235238b0ce0722180da80131620698b0|Irina|Wed Dec 11 14:16:46 2013|Irina|Wed Dec 11 14:16:46 2013|Removed Commented-out code and added JavaDoc in TestPackages
+267eca172be21d3c87f64e45fa984ca17c24d436|Irina|Wed Dec 11 13:27:43 2013|Irina|Wed Dec 11 13:27:43 2013|Depricated Orphan Service Methods in WeaponService and Correction of JavaDoc on Service Layer
+0fc3877c0005d4028d49ad7402f1f34771fad520|auronmatrix|Wed Dec 11 04:30:20 2013|auronmatrix|Wed Dec 11 04:30:52 2013|Added TODO
+5ffba2a466587e245f35753468e2474e48b54df8|auronmatrix|Wed Dec 11 04:14:10 2013|auronmatrix|Wed Dec 11 04:30:48 2013|Added create=true to connection URL to create DB if does not exist
+46a687274177b9821d7f7722fb7a5667f71d5373|auronmatrix|Wed Dec 11 03:18:56 2013|auronmatrix|Wed Dec 11 04:30:44 2013|Code cleanup
+66e9b4aaaf099d72f548fab6638cf28ddafc3e06|Auronspan|Wed Dec 11 04:22:09 2013|Auronspan|Wed Dec 11 04:22:09 2013|Update README.md
+2d29bdb94414fc7a0c41a3219513191400a32626|Auronspan|Wed Dec 11 04:19:41 2013|Auronspan|Wed Dec 11 04:19:41 2013|Updated readme as per requirements
+d7ff451235a73496a041586da61bbf90c79514a1|auronmatrix|Wed Dec 11 03:00:42 2013|auronmatrix|Wed Dec 11 03:00:42 2013|Changed res files. Corrected small text on Index page
+2ea204aa3614f57a5f308ecdb7ae5aad5c17937a|auronmatrix|Wed Dec 11 02:45:30 2013|auronmatrix|Wed Dec 11 02:45:30 2013|Completely fixed Locations (MonsterArea) FK constraint issues
+e16ebead066007c67b4d84209d67cefba104b0b9|auronmatrix|Wed Dec 11 02:19:43 2013|auronmatrix|Wed Dec 11 02:19:43 2013|Made changes to Location. Fixed one side of cascade problem
+142a95e1670ab80fb3b2032497d03b5e9f2da52d|auronmatrix|Wed Dec 11 01:36:44 2013|auronmatrix|Wed Dec 11 01:36:44 2013|Implemented Area Rest Service and Server Resource
+b7602acc8a9754f03c9178d9353310caf566143f|auronmatrix|Wed Dec 11 01:20:38 2013|auronmatrix|Wed Dec 11 01:20:38 2013|Fixed Rest Client WeaponService to work. Fixed Rest service WeaponResource to work.
+8ab35b14c2f1bb000a0717d01fcc34c2ddbcf675|auronmatrix|Tue Dec 10 22:53:18 2013|auronmatrix|Tue Dec 10 22:54:17 2013|Fixed dependencies problem calling JPA1
+6f810ea5898b10dabbced19cf88e42f8032e582f|auronmatrix|Tue Dec 10 20:43:55 2013|auronmatrix|Tue Dec 10 20:43:55 2013|Fixed import error for Rest client -Working version -
+946221cf3ddca93b8481de7adcd4a23c83d62c23|auronmatrix|Tue Dec 10 20:40:54 2013|auronmatrix|Tue Dec 10 20:40:54 2013|Fixed Bean injection into Rest & Merged with Irin'as test fixes
+1033555d21aaca05ba75391060753219d8feed81|auronmatrix|Tue Dec 10 20:39:37 2013|auronmatrix|Tue Dec 10 20:40:00 2013|Fixed Bean injection into REST Service
+d556e91d37b016d2e7e92745e2e6f7b3681f9835|Irina|Tue Dec 10 20:04:00 2013|Irina|Tue Dec 10 20:04:00 2013|Fixing tests in Survive-Java-Persistence
+f0fbe5e25b4ac68fdc23e69d44cf0baeb1ac5ae5|Irina|Tue Dec 10 18:51:38 2013|Irina|Tue Dec 10 18:51:38 2013|Removed Commented code in Survive-Java-Persistence
+91cdd2deb8a20190f52187374ca76b003301898a|auronmatrix|Tue Dec 10 17:57:10 2013|auronmatrix|Tue Dec 10 17:57:10 2013|Comleted WeaponsResource implementation
+0c25038a1f17dcd233d7424ec2b08a790ebb1646|auronmatrix|Tue Dec 10 15:24:18 2013|auronmatrix|Tue Dec 10 15:24:18 2013|Created Rest resources
+202610137ead9435fa599c5e2f70860b594e712b|Irina|Tue Dec 10 13:33:01 2013|Irina|Tue Dec 10 13:33:01 2013|Added JavaDoc for Dto
+ed4b31d233a73103da4f780ed68a62ea66cabe59|Irina|Tue Dec 10 12:57:11 2013|Irina|Tue Dec 10 12:57:11 2013|Removed Commented code in Survive-Java-Business-API
+bcab8b6707efa4012fe97c6b126f62d820616db0|Irina|Tue Dec 10 12:11:40 2013|Irina|Tue Dec 10 12:11:40 2013|Added Localization for Location and for other missing places
+a9aca191dbf80614bcf089582fa0fa3beecae6b6|Irina|Mon Dec 9 23:21:59 2013|Irina|Mon Dec 9 23:21:59 2013|Validation for Location added and English Resources updated
+2ecb28da3d42022f5528de1aa8d0ee48feb9c242|auronmatrix|Mon Dec 9 15:05:26 2013|auronmatrix|Mon Dec 9 15:05:26 2013|Added stub methods for REST server
+f4daa16b9b44c05204c8e604de0995f0d8b356f2|auronmatrix|Sun Dec 8 15:46:27 2013|auronmatrix|Sun Dec 8 15:46:27 2013|Fixed REST CRUD functions
+8dab88b4823db76228c5d18c94247d0cacfe7793|auronmatrix|Sun Dec 8 03:40:27 2013|auronmatrix|Sun Dec 8 03:40:27 2013|Created Basic Rest Client
+514285e74246cb3e6f9d9e21e4fd9b7e916035d2|auronmatrix|Sat Dec 7 16:43:48 2013|auronmatrix|Sat Dec 7 16:44:05 2013|Added Git-Client
+d92aa8b55423018fd3cffd6e63b7f5bc03752e89|Michal|Sat Dec 7 16:39:11 2013|Michal|Sat Dec 7 16:39:11 2013|REST implementation - simple test - path /rest/weapons/  v.2
+e9ed93c1b50cfddcba9f2d393f7a79ef411af33d|Michal|Sat Dec 7 11:39:05 2013|Michal|Sat Dec 7 11:39:05 2013|REST implementation - simple test - path /rest/weapons/
+3bc051e86e38a9bc0e9421fa5fe654bdc4ab79c1|Maria|Fri Dec 6 22:00:30 2013|Maria|Fri Dec 6 22:00:30 2013|
+9e4c0670da603f34d0ef89a2de1044947346c32d|xvinkle1|Fri Dec 6 20:04:40 2013|xvinkle1|Fri Dec 6 20:04:40 2013|Fixed the compilation errors somehow. However now the MonsterAreaServiceImplTest has two tests - testSave() and testUpdate() commented out. It's related to the MonsterArea PK.
+9651cb79475fe9297fddaaef47fed740d6a95df6|Maria|Wed Dec 4 23:21:28 2013|Maria|Wed Dec 4 23:21:28 2013|
+73dbb1d5e2e6cad01de33f60de7b4ede84425de8|Maria|Wed Dec 4 23:21:01 2013|Maria|Wed Dec 4 23:21:01 2013|
+5e61b261d4c711fd42ee8e8dfd2b32496012cdac|Maria|Wed Dec 4 22:21:52 2013|Maria|Wed Dec 4 22:21:52 2013|
+012c30042b9035de0778132819a187005b5027e5|Maria|Wed Dec 4 22:20:52 2013|Maria|Wed Dec 4 22:20:52 2013|
+ec2ba51be24c1279fa69458114b15ad200a291c3|Maria|Wed Dec 4 22:20:43 2013|Maria|Wed Dec 4 22:20:43 2013|
+c58d02d200bdb22930dc20a5f8f008e213ebd4d3|auronmatrix|Wed Dec 4 03:20:47 2013|auronmatrix|Wed Dec 4 03:20:47 2013|Code Cleaning
+a08f59d3615cfeb7b12b3b80ae24cfe57d9d3bc2|Irina|Wed Dec 4 02:17:39 2013|Irina|Wed Dec 4 02:17:39 2013|Validation for Area
+562020b62255120b0d288cef33d25cc0fb8eac40|Irina|Wed Dec 4 01:30:58 2013|Irina|Wed Dec 4 01:30:58 2013|Validation for Efficiency
+6e58fcfb71449c26f60a9a9b89c68c66537e1826|Irina|Wed Dec 4 01:03:45 2013|Irina|Wed Dec 4 01:03:45 2013|Validation for WeaponActionBean
+bf3a5a726bb1c7da8fe02ba904aeb9156d047b40|Irina|Wed Dec 4 00:27:44 2013|Irina|Wed Dec 4 00:27:44 2013|Validation for MonsterActionBean
+7dbb24591bb790fd5e03770cffb45043368fda10|xvinkle1|Tue Dec 3 16:28:19 2013|xvinkle1|Tue Dec 3 16:28:19 2013|Fixed localisation - default language
+34dca68defac2177cd51ade7a65f14f3b5a9d20a|auronmatrix|Tue Dec 3 03:14:13 2013|auronmatrix|Tue Dec 3 03:14:13 2013|Added some extras to gallery
+4480a744fd8745b589de1588c56d4696ae5fef19|auronmatrix|Tue Dec 3 02:42:31 2013|auronmatrix|Tue Dec 3 02:42:31 2013|Added a cancel button
+28b3bb6f1e78488a1d07dc520fd5ce108c727b24|auronmatrix|Tue Dec 3 02:30:39 2013|auronmatrix|Tue Dec 3 02:30:39 2013|Basic GUI fixes
+f4ce14de8b84a3152ebdd44f08aefe6c9ab9d4d6|auronmatrix|Tue Dec 3 02:29:59 2013|auronmatrix|Tue Dec 3 02:29:59 2013|Efficiency filters
+b786b193eac3dfe0905ad043cde8edafbaf118dd|auronmatrix|Tue Dec 3 02:22:21 2013|auronmatrix|Tue Dec 3 02:22:21 2013|Added extra feature (Gallery)
+72de74bd806cfe670804e6898958b38d45758e2c|auronmatrix|Tue Dec 3 01:50:18 2013|auronmatrix|Tue Dec 3 01:50:18 2013|Working MonsterWeapon (Efficiencies)
+7a4c81030e938c7b7164157f51e844b7f68040af|auronmatrix|Tue Dec 3 01:13:37 2013|auronmatrix|Tue Dec 3 01:13:37 2013|Working MonsterWeapon (Efficiencies) CRUD
+2a1cc1d3eed7c9215497404ba93d885328ef8a88|auronmatrix|Tue Dec 3 01:13:24 2013|auronmatrix|Tue Dec 3 01:13:24 2013|Working MonsterWeapon (Efficiencies) CRUD
+d715c45623faae6258837223164dec61a62b093d|auronmatrix|Mon Dec 2 23:28:03 2013|auronmatrix|Mon Dec 2 23:28:03 2013|Working on MonsterWeapon. Removed  target folder contents from git
+9d86a186bf502cd0b4294ea035e1a8f7f1d2ac3c|agentirishka|Mon Dec 2 23:12:41 2013|agentirishka|Mon Dec 2 23:12:41 2013|Dropdown menu for spotted monster reverted
+a4448b5408e6fc6770778bee853935bafbe5fff9|agentirishka|Mon Dec 2 22:55:07 2013|agentirishka|Mon Dec 2 22:55:07 2013|Merge branch 'master' of https://github.com/Auronspan/Survive
+5d0db00c0de873170919bedff93b88d3ee68db5e|agentirishka|Mon Dec 2 22:53:06 2013|agentirishka|Mon Dec 2 22:53:06 2013|Dropdown menu for spotted monster
+9420b08ac168635f22490f1db15f90b76c3d106a|auronmatrix|Mon Dec 2 19:00:02 2013|auronmatrix|Mon Dec 2 19:00:02 2013|Modified merged with Irinas tests
+125036977be00d2e52ce7928dbfad61cde59b379|auronmatrix|Mon Dec 2 17:54:44 2013|auronmatrix|Mon Dec 2 17:54:44 2013|Attempt to remove target folder
+213f6436766108827ad419c32e27aac3b4c60855|auronmatrix|Mon Dec 2 17:44:13 2013|auronmatrix|Mon Dec 2 17:44:13 2013|Merge branch 'master' of https://github.com/Auronspan/Survive.git
+9b1838f7c5e20f8e6a1bcfe0e775bdf53f350025|auronmatrix|Mon Dec 2 17:37:47 2013|auronmatrix|Mon Dec 2 17:37:47 2013|Modified merged with Irinas tests
+de6c6e5a3edc895708ecbfe841d9f04aed3e4a18|auronmatrix|Mon Dec 2 17:35:30 2013|auronmatrix|Mon Dec 2 17:35:30 2013|Modified merged with Irinas tests
+bd82d2bbf699946fd0c77acd3877b8833ecdd272|auronmatrix|Mon Dec 2 17:31:49 2013|auronmatrix|Mon Dec 2 17:31:49 2013|Modified effiiciencies for selects to work
+bb192764c41791650422a64d4aa68456255e2840|auronmatrix|Mon Dec 2 17:30:32 2013|auronmatrix|Mon Dec 2 17:30:32 2013|Moved projects to POM
+443398eddbdd8642abba2ae4a38866bc3dc3486c|auronmatrix|Mon Dec 2 17:29:28 2013|auronmatrix|Mon Dec 2 17:29:28 2013|Moved projects to POM
+0bb3366cc49c63277eb92b9e2ac4aa465dce4021|Michal|Mon Dec 2 17:00:20 2013|Michal|Mon Dec 2 17:00:20 2013|Fixed MonsterWeaponServiceImplTest.
+53eb048d17a5e0df0c5cdd25f574749cda270c25|auronmatrix|Sat Nov 30 18:37:14 2013|auronmatrix|Sat Nov 30 18:37:14 2013|Fixed header
+b68f4227d9d5a4a09a1282d2196db3313a88146f|auronmatrix|Sat Nov 30 18:36:17 2013|auronmatrix|Sat Nov 30 18:36:17 2013|Merge branch 'master' of https://github.com/Auronspan/Survive
+f0c2874fb08701bff4d449fa151ae6c515be55da|agentirishka|Fri Nov 29 00:57:10 2013|agentirishka|Fri Nov 29 00:57:10 2013|fixing button Delete in Monster
+09630f57bb3f39dfc6724d880b51d662d0afd2c6|agentirishka|Fri Nov 29 00:44:22 2013|agentirishka|Fri Nov 29 00:44:22 2013|fixing button Delete in Area
+dc1447f3f7d14fe4e64185472d9912c2fe0cac42|agentirishka|Thu Nov 28 23:20:17 2013|agentirishka|Thu Nov 28 23:20:17 2013|Localization for homepage.
+3d371ba0bd8dbf144baa0c03eaa0a6e4368441ab|agentirishka|Thu Nov 28 15:24:44 2013|agentirishka|Thu Nov 28 15:24:44 2013|Added validations for all inputs
+3171a87d27b3e29a4e072db9054d0afad62c40c3|agentirishka|Thu Nov 28 13:54:21 2013|agentirishka|Thu Nov 28 13:54:21 2013|fixing form.jsp for efficiencies
+40abe73759c7876cc8be14c8672fd962e77b79bd|agentirishka|Thu Nov 28 13:46:00 2013|agentirishka|Thu Nov 28 13:46:00 2013|fixing form.jsp for weapon and area
+fac11d58b44351661abbdf80ee835d3b29105b85|agentirishka|Thu Nov 28 13:26:35 2013|agentirishka|Thu Nov 28 13:26:35 2013|fixing form.jsp for area
+744f6f332601ac101c05a46edb40f17d0c0dcbed|agentirishka|Thu Nov 28 13:02:20 2013|agentirishka|Thu Nov 28 13:02:20 2013|fixing form.jsp for monster
+1b5ccf977fc6ad36950cb3d3c026ac0528a7107f|auronmatrix|Thu Nov 28 01:45:20 2013|auronmatrix|Thu Nov 28 01:45:20 2013|Tomcat changes
+e7c72560a8bae6f0af1e1fa2e466c9177fa27a4b|auronmatrix|Thu Nov 28 01:30:51 2013|auronmatrix|Thu Nov 28 01:30:51 2013|Moved projects to POM
+4c6dbe568b7a9e292deec2e3ea99c10121e2027d|PETA|Thu Nov 28 00:00:44 2013|PETA|Thu Nov 28 00:00:44 2013|
+f9eb41f95479440cb9b19abb66c740aecc0e9987|PETA|Thu Nov 28 00:00:20 2013|PETA|Thu Nov 28 00:00:20 2013|
+7dda07f22b90f0ed784112e398c721a710799f21|PETA|Thu Nov 28 00:00:07 2013|PETA|Thu Nov 28 00:00:07 2013|
+c8160c5957a1b8490927282b6e1399827ac9f423|Michal|Wed Nov 27 21:02:43 2013|Michal|Wed Nov 27 21:02:43 2013|Test commit.
+00ba36fb973c60aab64055b25378966fd6a874f6|Michal|Wed Nov 27 20:15:19 2013|Michal|Wed Nov 27 20:15:19 2013|Test commit.
+f648395c0b903874d7a944380a3ebf09a7f819dd|xvinkle1|Wed Nov 27 20:13:23 2013|xvinkle1|Wed Nov 27 20:13:23 2013|Test commit.
+3293bf41840bdcf2ea9044cbd8361721fe61976b|Michal|Wed Nov 27 20:00:38 2013|Michal|Wed Nov 27 20:00:38 2013|API POM minor change.
+fb22a5b52cf812375c1e02d66138f6cd9f8dc692|Michal|Wed Nov 27 19:54:12 2013|Michal|Wed Nov 27 19:54:12 2013|Finally fixed the issue starting embedded server + other POM related issues
+f5f9e559be6eb2b66bf640ab9e52621d509eaa0c|auronmatrix|Tue Nov 26 23:40:27 2013|auronmatrix|Tue Nov 26 23:40:27 2013|Changed structure for tomcat
+857e4d4312320a5668d5dc0eda2e7cf82621def8|auronmatrix|Tue Nov 26 23:37:19 2013|auronmatrix|Tue Nov 26 23:37:19 2013|Changed structure for tomcat
+6e473e72ac01aa5a189012ff513607e938ea415e|auronmatrix|Tue Nov 26 23:37:04 2013|auronmatrix|Tue Nov 26 23:37:04 2013|Moved projects to POM
+77c24c47c1c07a85b343e9a77a5fe785b5f42706|auronmatrix|Tue Nov 26 23:36:51 2013|auronmatrix|Tue Nov 26 23:36:51 2013|Moved projects to POM
+d9942daad71469fd37a817b9c81d10f306706468|auronmatrix|Tue Nov 26 23:32:43 2013|auronmatrix|Tue Nov 26 23:32:43 2013|Changed structure for tomcat
+df31a04a26fde0c520a5b9141aa5a8f0f3b77f23|agentirishka|Tue Nov 26 23:02:17 2013|agentirishka|Tue Nov 26 23:02:17 2013|Russian resources added.
+72bfc700824012ef69c104a6d46b8c603b2bcf5f|xvinkle1|Tue Nov 26 22:33:10 2013|xvinkle1|Tue Nov 26 22:33:10 2013|Merge origin/master
+74cf3ddded0ac1f8ffc4a81c745b9f4bcbc867b4|Michal|Tue Nov 26 22:32:18 2013|Michal|Tue Nov 26 22:32:18 2013|Removed the API dependcies.
+8960fe250c7577de9228491086cd66309c08070c|PETA|Tue Nov 26 22:09:03 2013|PETA|Tue Nov 26 22:09:03 2013|log4j conf
+d228462454394a81d0c193840b6c15496c9fa097|PETA|Tue Nov 26 22:08:54 2013|PETA|Tue Nov 26 22:08:54 2013|log4j conf
+95c8109bdac708cf353619470e0dbae657f5ee5c|PETA|Tue Nov 26 22:08:48 2013|PETA|Tue Nov 26 22:08:48 2013|log4j conf
+5e7e8824e3782ff84f1c0ee13cdd471642fd419a|auronmatrix|Tue Nov 26 21:40:26 2013|auronmatrix|Tue Nov 26 21:40:26 2013|Changed gitignore to exclude .jar and .war
+fa197bd94cf8660ff3838a74346b7d42f1976d3f|auronmatrix|Tue Nov 26 21:21:57 2013|auronmatrix|Tue Nov 26 21:21:57 2013|Moving Modules
+e5d1b7a18ae9de44917755016ca7f01e8918eadc|auronmatrix|Tue Nov 26 20:32:40 2013|auronmatrix|Tue Nov 26 20:32:40 2013|Moved projects to POM
+c87816656e1497df81ce5f7cb7a1b9e4f2271d6f|auronmatrix|Tue Nov 26 19:33:20 2013|auronmatrix|Tue Nov 26 19:33:20 2013|Monsterweapon modifications
+9c3b2ab5f257153aac3967534115d399642054a2|auronmatrix|Tue Nov 26 19:31:22 2013|auronmatrix|Tue Nov 26 19:31:22 2013|Monsterweapon modifications
+63457d899dc4d7b5f483c72584b413d403373962|auronmatrix|Tue Nov 26 19:30:24 2013|auronmatrix|Tue Nov 26 19:30:24 2013|Monsterweapon modifications
+fac8babf225ba7e814e70ae9bcb191b9cdbf1d52|auronmatrix|Tue Nov 26 19:27:12 2013|auronmatrix|Tue Nov 26 19:27:12 2013|Merge branch 'master' of https://github.com/Auronspan/Survive.git
+dbb847522613633337e1ea2fb1997cf6e213aff0|auronmatrix|Tue Nov 26 19:25:24 2013|auronmatrix|Tue Nov 26 19:25:24 2013|Monsterweapon modifications
+6ce25e7f0e81d2ca5927c611d7ba28642ee2fa3e|auronmatrix|Tue Nov 26 19:25:02 2013|auronmatrix|Tue Nov 26 19:25:02 2013|Monsterweapon modifications
+ff4a171ee307dab9d3ff84a1def8e8c5a9e8f653|Auronspan|Tue Nov 26 14:43:52 2013|Auronspan|Tue Nov 26 14:43:52 2013|Delete SystemUser.java
+e3da13c544197c691825227104dff8548d6141e2|Auronspan|Tue Nov 26 14:43:17 2013|Auronspan|Tue Nov 26 14:43:17 2013|Delete GenericEntity.java
+e891182add0cee848266ae2e66cb12daea47ef15|auronmatrix|Tue Nov 26 00:09:51 2013|auronmatrix|Tue Nov 26 00:09:51 2013|Changed .gitignore
+8cfaaefb540e81796c67dbd5a2ae5f591f6243d6|auronmatrix|Mon Nov 25 23:16:49 2013|auronmatrix|Mon Nov 25 23:16:49 2013|Fixed project Context to run on PA165
+f4a5050c04b68048587e9e8bc117b5ac3a94eb98|auronmatrix|Mon Nov 25 21:38:22 2013|auronmatrix|Mon Nov 25 21:38:22 2013|Added gitignore
+760cc7136d0fff5974e464a4dfdde5d9fbf13bcf|auronmatrix|Mon Nov 25 21:08:29 2013|auronmatrix|Mon Nov 25 21:08:29 2013|Removed folders causing issues with netbeans
+bc14929bc5ff42636ae41174b5be038909d97826|auronmatrix|Mon Nov 25 02:43:49 2013|auronmatrix|Mon Nov 25 02:43:49 2013|Fixed efficiencies and associations to work
+93977dfd0883a21ef52e1810394d26cd43f81800|auronmatrix|Mon Nov 25 02:43:02 2013|auronmatrix|Mon Nov 25 02:43:02 2013|Fixed efficiencies and associations to work
+6ee47c4f93c6bc23744acd13821b3bd7d06fb369|auronmatrix|Sun Nov 24 23:54:24 2013|auronmatrix|Sun Nov 24 23:54:24 2013|Fixed efficiencies and associations to work
+5c376b04b26a2eef5488fd1fdc2a506cce699e33|auronmatrix|Sun Nov 24 23:54:10 2013|auronmatrix|Sun Nov 24 23:54:10 2013|Fixed efficiencies and associations to work
+2737daedd16b6edd70d233c38b9f79986f9114d9|auronmatrix|Sun Nov 24 23:45:37 2013|auronmatrix|Sun Nov 24 23:45:37 2013|Fixed efficiencies and associations to work
+5764ec5703636a5dea27dfd16b11f4ac1d50d632|auronmatrix|Sun Nov 24 19:46:38 2013|auronmatrix|Sun Nov 24 19:46:38 2013|Fixed all CRUD functions!!!!!!!!!!!!!!!!!!!! Damn finally!!!!!!!
+5869162577f31c1ccd0cdcdc794d5639f101c2a3|auronmatrix|Sun Nov 24 16:42:55 2013|auronmatrix|Sun Nov 24 16:42:55 2013|Fixed enumeration type
+c5481c7f1a857eaca181c0ed8da21023a701ab5b|auronmatrix|Sun Nov 24 16:28:16 2013|auronmatrix|Sun Nov 24 16:28:16 2013|Fixed to use in memory DB again
+5605a06e0a6fa92ae9fc9677a6d4bebc4e4f0e12|auronmatrix|Sun Nov 24 16:21:27 2013|auronmatrix|Sun Nov 24 16:21:27 2013|Merge branch 'master' of https://github.com/Auronspan/Survive.git
+27dbe717a75f8ec92db73f5eb6d7f691e5bdd369|auronmatrix|Sun Nov 24 16:15:58 2013|auronmatrix|Sun Nov 24 16:15:58 2013|Fixed deleted files
+feaa99571b72eb0fb41115bc25065b290b18b526|auronmatrix|Sun Nov 24 16:11:49 2013|auronmatrix|Sun Nov 24 16:11:49 2013|Fixed deleted files
+53f00ff123e4eec3e6d21e0307f4d2342cd2fb5c|Auronspan|Sun Nov 24 15:36:13 2013|Auronspan|Sun Nov 24 15:36:13 2013|Update README.md
+aa47d3b25cafee40f69d74485c333705a3f63443|auronmatrix|Sun Nov 24 14:57:23 2013|auronmatrix|Sun Nov 24 14:57:23 2013|Merge branch 'master' of https://github.com/Auronspan/Survive.git
+2d3384762f50eec269cbf1f2e361cd0bfd674012|auronmatrix|Sun Nov 24 14:57:06 2013|auronmatrix|Sun Nov 24 14:57:06 2013|Fixed changes to JTA
+026a5ef0a34cd5196d2a9d0f2d236c47b181bc38|Maria|Sun Nov 24 14:47:30 2013|Maria|Sun Nov 24 14:47:30 2013|
+4866e542614b9ba77f4a9eaf55ea0d601c21ca7a|Maria|Sun Nov 24 14:45:45 2013|Maria|Sun Nov 24 14:45:45 2013|
+016f14ab0b92e7823456f1fda77de442204e7e3b|Maria|Sun Nov 24 14:26:02 2013|Maria|Sun Nov 24 14:26:02 2013|
+638d54f4c24fbe48a992718b059acb8a1749a1c0|auronmatrix|Sat Nov 23 17:46:46 2013|auronmatrix|Sat Nov 23 17:46:46 2013|Fixed changes to JTA
+f3ed7852ef40d4b9bc0832b3f9d370ebe48fa9e9|auronmatrix|Sat Nov 23 17:39:19 2013|auronmatrix|Sat Nov 23 17:39:19 2013|Merge branch 'master' of https://github.com/Auronspan/Survive.git
+7703230344dd6bdd1e0c85a429f948f2247137f4|mashadmm|Sat Nov 23 17:38:25 2013|mashadmm|Sat Nov 23 17:38:25 2013|Update GenericDaoAbs.java
+9d3984ae09bb093ca3dd948dfa4267719e906a20|auronmatrix|Sat Nov 23 17:37:36 2013|auronmatrix|Sat Nov 23 17:37:36 2013|Merge branch 'master' of https://github.com/Auronspan/Survive.git
+2cf356b16a92adfe2aac911de6b36ee623a7c4b9|auronmatrix|Sat Nov 23 17:36:29 2013|auronmatrix|Sat Nov 23 17:36:29 2013|Fixed mappings and @Service
+67b759bd2310c1d37bf843c00885d78e7bc80a17|auronmatrix|Sat Nov 23 17:36:20 2013|auronmatrix|Sat Nov 23 17:36:20 2013|Fixed mappings and @Service
+c4ced76c7d328bd1a90d61bd57f079aa309ffa62|auronmatrix|Sat Nov 23 17:36:06 2013|auronmatrix|Sat Nov 23 17:36:06 2013|Fixed mappings
+4ad50a5cf5cbfa315f9b6039ba3d7afdacff2e19|mashadmm|Sat Nov 23 17:25:44 2013|mashadmm|Sat Nov 23 17:25:44 2013|Update GenericDaoImpl.java
+ece7e9e64f7fba064b7b130c0efe4a6f68336cd3|mashadmm|Sat Nov 23 17:22:15 2013|mashadmm|Sat Nov 23 17:22:15 2013|Update GenericDaoImpl.java
+f065c31f6480185e152f9f73d97f4d3386d00da0|mashadmm|Sat Nov 23 17:21:32 2013|mashadmm|Sat Nov 23 17:21:32 2013|Update AreaDaoImpl.java
+145fa9c5b644d5ac9b5cf71277ce2008a0510a4a|mashadmm|Sat Nov 23 17:20:16 2013|mashadmm|Sat Nov 23 17:20:16 2013|Update GenericDaoImpl.java
+69a29519720444e3726df2a4a49a1820f5adc214|mashadmm|Sat Nov 23 17:19:59 2013|mashadmm|Sat Nov 23 17:19:59 2013|Update GenericDaoImpl.java
+10edfe23543c69f92293840b2bcc2f5e3798dd82|mashadmm|Sat Nov 23 17:19:15 2013|mashadmm|Sat Nov 23 17:19:15 2013|Update GenericDaoAbs.java
+7c5260e6f7f279adc0b12493763465196d60dfd3|mashadmm|Sat Nov 23 17:16:29 2013|mashadmm|Sat Nov 23 17:16:29 2013|Update GenericDaoImpl.java
+641ab262dc0034bf05fa0b5c28db65dede470c25|mashadmm|Sat Nov 23 17:14:21 2013|mashadmm|Sat Nov 23 17:14:21 2013|Update MonsterActionBean.java
+8f79d0fe2dcacf9bce24d4aade5097543760aec6|mashadmm|Sat Nov 23 16:48:03 2013|mashadmm|Sat Nov 23 16:48:03 2013|Update GenericDaoAbs.java
+4c416a4c5bb8ce6451d0d5ac4664c078839e8f3c|auronmatrix|Sat Nov 23 16:42:04 2013|auronmatrix|Sat Nov 23 16:42:04 2013|MAJOR Change: Changed associative entities
+779bb863224cbb349541a61e69d9e477c198eebc|auronmatrix|Sat Nov 23 16:41:41 2013|auronmatrix|Sat Nov 23 16:41:41 2013|MAJOR Change: Changed associative entities
+74c2beba08fe17e11e7667e52ff1e4adda596dd2|auronmatrix|Sat Nov 23 05:04:30 2013|auronmatrix|Sat Nov 23 05:04:30 2013|Code cleanup. Removed redundant equals and hash overrides
+9c7aaee57c7901a3ee38617ab6d0ccbc51d3aea9|auronmatrix|Sat Nov 23 04:58:18 2013|auronmatrix|Sat Nov 23 04:58:18 2013|Code cleanup. Removed redundant equals and hash overrides
+cc5053f32105eb36b5b15edc0f4156af91e8325d|auronmatrix|Sat Nov 23 04:58:03 2013|auronmatrix|Sat Nov 23 04:58:03 2013|Code cleanup. Removed redundant equals and hash overrides
+c1765cf05c14656fa91dac86c67f98d3dee01b18|auronmatrix|Sat Nov 23 04:51:47 2013|auronmatrix|Sat Nov 23 04:51:47 2013|Removed DTO mapping with objects. Created composite Transfer objects
+c2c2ccace687b48b4a2cd3516b17847a3e9633a3|auronmatrix|Sat Nov 23 04:10:22 2013|auronmatrix|Sat Nov 23 04:10:22 2013|Added embed Tomcat server
+266d0b30bca2b12a964a241abeadda9a54216c92|auronmatrix|Sat Nov 23 03:23:05 2013|auronmatrix|Sat Nov 23 03:23:05 2013|Fixed project structure
+35c8300369add42bce5f1d8af881441bccf8384c|auronmatrix|Sat Nov 23 03:21:15 2013|auronmatrix|Sat Nov 23 03:21:15 2013|Fixed project structure
+532cde33abc431b8f99ce0fe58707284663536b7|auronmatrix|Sat Nov 23 03:21:08 2013|auronmatrix|Sat Nov 23 03:21:08 2013|Fixed project structure
+31db62dc4495f831bbfe0ff835fdd6bd3232792a|auronmatrix|Sat Nov 23 03:20:56 2013|auronmatrix|Sat Nov 23 03:20:56 2013|Fixed project structure
+148fa8d1613d8ea8f2444490d17c582230ef8c7c|auronmatrix|Sat Nov 23 02:46:19 2013|auronmatrix|Sat Nov 23 02:46:19 2013|Fixed project structure
+a0d5821d83178a567dc5647cb58eb56cd9717d75|auronmatrix|Sat Nov 23 02:46:05 2013|auronmatrix|Sat Nov 23 02:46:05 2013|Fixed project structure
+1a1ae9ee762b3d623e31f0aa4236fdfd72a42b60|auronmatrix|Fri Nov 22 20:06:55 2013|auronmatrix|Fri Nov 22 20:06:55 2013|working context
+e5420f4e5cdbdbe0b3650c841b58921afff7f2fa|auronmatrix|Fri Nov 22 19:57:13 2013|auronmatrix|Fri Nov 22 19:57:13 2013|fixed multiple bean declarations
+c1ac381249f82060a790b87fecae9c5042a0f4e4|auronmatrix|Fri Nov 22 19:57:03 2013|auronmatrix|Fri Nov 22 19:57:03 2013|fixed multiple bean declarations
+60dc1375d6b7bb243d26d25e83c6dd376007c8d5|auronmatrix|Fri Nov 22 19:46:07 2013|auronmatrix|Fri Nov 22 19:46:07 2013|fixed persistence unit multiple declaration
+ea74a79a70111613744cc57d0254d726c664ef51|auronmatrix|Fri Nov 22 19:45:58 2013|auronmatrix|Fri Nov 22 19:45:58 2013|fixed persistence unit multiple declaration
+d8fa43948324cbe60cca346c94b7e04e21e15cef|auronmatrix|Fri Nov 22 19:37:47 2013|auronmatrix|Fri Nov 22 19:37:47 2013|fixed package
+5ef14500900aa41759d0eacd42e2d62901a5a17e|auronmatrix|Fri Nov 22 19:37:30 2013|auronmatrix|Fri Nov 22 19:37:30 2013|fixed package
+82846d93ef0d8e0c24433068ea6135285c211133|Irina|Fri Nov 22 18:52:04 2013|Irina|Fri Nov 22 18:52:04 2013|Added resources for русский язык
+9350bfa4a03b8801b7558c8f8de7cf80fe4093d2|auronmatrix|Fri Nov 22 17:54:15 2013|auronmatrix|Fri Nov 22 17:54:15 2013|fixed incorrect bean called
+6bf8257d87fa74d95f55d8d00057ffd878f46652|agentirishka|Fri Nov 22 17:25:30 2013|agentirishka|Fri Nov 22 17:25:30 2013|Merge branch 'master' of https://github.com/Auronspan/Survive.git
+117fd92d1b9792787677633ab12e1befdfbaad39|Irina|Fri Nov 22 17:25:04 2013|Irina|Fri Nov 22 17:25:04 2013|Added resources for русский язык
+a20ca7483a60113276a4931222ed62d1faae736a|auronmatrix|Fri Nov 22 17:18:11 2013|auronmatrix|Fri Nov 22 17:18:11 2013|Fixed are edit form
+c3995be3829ed461d5ea0d40e8431015c2d0be6f|auronmatrix|Fri Nov 22 17:14:05 2013|auronmatrix|Fri Nov 22 17:14:05 2013|Fixed Area mappings
+849dfaffc4df029e5d238502a0e6ec5ea2c3a813|auronmatrix|Fri Nov 22 17:13:37 2013|auronmatrix|Fri Nov 22 17:13:37 2013|Fixed Area mappings
+a95f99da7d483582b5d4d752474805f81380ff52|auronmatrix|Fri Nov 22 17:13:31 2013|auronmatrix|Fri Nov 22 17:13:31 2013|Fixed Area mappings
+3c4989d4a352746d0bc419baf3bb6cea389aba1c|auronmatrix|Fri Nov 22 17:01:41 2013|auronmatrix|Fri Nov 22 17:01:41 2013|working of efficiencies
+2d5fe894f646aeac5fcd0a103c9da1567363471a|auronmatrix|Fri Nov 22 16:59:33 2013|auronmatrix|Fri Nov 22 16:59:33 2013|Merge branch 'master' of https://github.com/Auronspan/Survive.git
+ac61ccc505ac09332e31a4e8d3f92b7ef5850671|auronmatrix|Fri Nov 22 16:59:23 2013|auronmatrix|Fri Nov 22 16:59:23 2013|working of efficiencies
+e738e99ca6d15a63859502fa40d2bb44d5f83b28|Irina|Fri Nov 22 16:55:54 2013|Irina|Fri Nov 22 16:55:54 2013|Add area ui and refactor :)
+7b59f2276b582ddebfc27ed07a9bb310e327c333|Irina|Fri Nov 22 16:17:30 2013|Irina|Fri Nov 22 16:17:30 2013|Add AreaService
+d3700643795c501a6713ee39fa1459ec009d2c97|auronmatrix|Fri Nov 22 15:51:17 2013|auronmatrix|Fri Nov 22 15:51:17 2013|Removed associative attributes from mapping
+505e1ae050cd36815de4a18acb0753348b48b283|auronmatrix|Fri Nov 22 15:50:55 2013|auronmatrix|Fri Nov 22 15:50:55 2013|Removed associative attributes from mapping
+b62f4e0544f884ef946b180e38224b8460ac0ce1|auronmatrix|Fri Nov 22 15:50:16 2013|auronmatrix|Fri Nov 22 15:50:16 2013|Fixed layout and navigation. Added required weapon resources
+155b05101dd8a44d97c5ccd59d11023647df193f|auronmatrix|Fri Nov 22 15:32:46 2013|auronmatrix|Fri Nov 22 15:32:46 2013|Implemented basic forms and action bean for Weapon management
+e8d0bf2930afe03fd2cee03e1e5675cdc66fe5ab|auronmatrix|Fri Nov 22 14:03:17 2013|auronmatrix|Fri Nov 22 14:03:17 2013|Revert "Revert "Changed methods using flush in GenericJpaDao""
+d678457d17b61ea4cd465678a7fd900ea6c0fa4e|auronmatrix|Fri Nov 22 14:03:00 2013|auronmatrix|Fri Nov 22 14:03:00 2013|Revert "Changed methods using flush in GenericJpaDao"
+c54a2218d68be2eb4d4c4d7efedc7db97ac21876|auronmatrix|Fri Nov 22 13:08:24 2013|auronmatrix|Fri Nov 22 13:08:24 2013|Changed methods using flush in GenericJpaDao
+f97bb8d852e06f3071d2d84f92fbdd87599b39fd|auronmatrix|Fri Nov 22 13:06:39 2013|auronmatrix|Fri Nov 22 13:06:39 2013|Changed services to be transactional at class level. Modified Service interfaces and classes to include methods for findAll and Delete(Long id)
+ce1f65fe29594ffe64a35756883f4821d1a3fa7e|auronmatrix|Fri Nov 22 03:08:17 2013|auronmatrix|Fri Nov 22 03:08:17 2013|Modified application context
+396c5a4683c49026ed45500bbe9c1f57b51547ab|auronmatrix|Fri Nov 22 03:07:57 2013|auronmatrix|Fri Nov 22 03:07:57 2013|created beans to call every service and dao object implementation. Removed the @Service from services as these cause error with transaction management.
+3019dcd8368005ee28a62516db1435aab2c10356|auronmatrix|Fri Nov 22 00:21:38 2013|auronmatrix|Fri Nov 22 00:21:38 2013|removed old project dependencies
+d21714ac448e6e2fb4a6f374dcaddb0074551bc0|auronmatrix|Fri Nov 22 00:21:16 2013|auronmatrix|Fri Nov 22 00:21:16 2013|Fixed duplicate persistence issue
+3fa28afcaacb647f629fe1af9f9b2582508c55bb|auronmatrix|Thu Nov 21 23:20:44 2013|auronmatrix|Thu Nov 21 23:20:44 2013|fixed more issues with monster
+4cbe0e23930907200b7b38cf6d3b728ccca21938|auronmatrix|Thu Nov 21 23:18:20 2013|auronmatrix|Thu Nov 21 23:18:20 2013|Moved to correct place
+ff278289d8d6af4dc3612e48c62f3e6e8592f38a|auronmatrix|Thu Nov 21 23:17:58 2013|auronmatrix|Thu Nov 21 23:17:58 2013|Tried to fix injection issue
+d6a2b5a79e102ed3d61eca741da1eb967802c5bd|auronmatrix|Thu Nov 21 21:04:51 2013|auronmatrix|Thu Nov 21 21:04:51 2013|FIxed form element bindings and cancel
+57e1801110f0b1430f97f2a953047dc0d687cbbe|auronmatrix|Thu Nov 21 07:03:42 2013|auronmatrix|Thu Nov 21 07:03:42 2013|Fixing MonsterActionBean
+c18963c831abe9a83d9d3ccb878bb9bf9c641385|auronmatrix|Thu Nov 21 07:02:59 2013|auronmatrix|Thu Nov 21 07:02:59 2013|Fixing MonsterActionBean
+ff32bf338a7118fda80097f9d8063ff83d0c3169|auronmatrix|Thu Nov 21 07:02:53 2013|auronmatrix|Thu Nov 21 07:02:53 2013|Fixing MonsterActionBean
+db07ed9e5d3800df5374c181c373b2702596a1d4|auronmatrix|Thu Nov 21 06:39:53 2013|auronmatrix|Thu Nov 21 06:39:53 2013|Fixing MonsterActionBean
+ae7743a7d6b4ed8bda6aab08af5d6f7d50680798|auronmatrix|Thu Nov 21 03:48:45 2013|auronmatrix|Thu Nov 21 03:48:45 2013|Added remove by ID method
+e066e3af4d2c7c2348fe0beccf8578b4b4860a8b|auronmatrix|Thu Nov 21 03:47:33 2013|auronmatrix|Thu Nov 21 03:47:33 2013|Added remove by ID method
+8ffd3096305d75b17d82519a578d198a8d703e3a|auronmatrix|Thu Nov 21 03:47:16 2013|auronmatrix|Thu Nov 21 03:47:16 2013|Added remove by ID method
+25e8a34cf4506e73ae5426b965253d41a5b1becc|auronmatrix|Wed Nov 20 21:37:38 2013|auronmatrix|Wed Nov 20 21:37:38 2013|Fixed home page
+b1043160db7858314625e0954250a4eb3e8975d8|auronmatrix|Wed Nov 20 19:38:30 2013|auronmatrix|Wed Nov 20 19:38:30 2013|fixed rendering HTML5 issues. Remodeled forms to use HTML5 validation. Completed layout of monster form
+974a1d2419858fbc2890e83d83c9bf2186bc1840|auronmatrix|Wed Nov 20 02:48:53 2013|auronmatrix|Wed Nov 20 02:48:53 2013|Implemented basics for Monster management. Work in progress. Created Beans, properties and required context. Issue with context scanning fixed.
+bda2a6209b0d67c396b250d69115477c55df919a|auronmatrix|Wed Nov 20 02:47:26 2013|auronmatrix|Wed Nov 20 02:47:26 2013|Removed all associative mappings in Dozer map files for Monster. Caused error on web layer
+f87eac5783e84e1097bd637b15940e953579626b|auronmatrix|Wed Nov 20 02:46:32 2013|auronmatrix|Wed Nov 20 02:46:32 2013|Removed associative mappings in order to test persitence layer on web. Received error with lazy fetching
+741bb1317c32d9c19e0efea75e512d9966b94cf8|auronmatrix|Tue Nov 19 22:59:04 2013|auronmatrix|Tue Nov 19 22:59:04 2013|Renamed Survive-Java to Survive-Java-Core
+19d24586976793147f2a81a89b942887f52a8c7b|auronmatrix|Tue Nov 19 22:58:55 2013|auronmatrix|Tue Nov 19 22:58:55 2013|Renamed Survive-Java to Survive-Java-Core
+f4d9951f3396cb693d7e3b33f8506cbab3daf055|auronmatrix|Tue Nov 19 22:58:39 2013|auronmatrix|Tue Nov 19 22:58:39 2013|Renamed Survive-Java to Survive-Java-Core
+ce2d7afcde11a487ff2d960a3cb1967fbfa26d81|auronmatrix|Tue Nov 19 22:53:39 2013|auronmatrix|Tue Nov 19 22:53:39 2013|Split Java into java and API
+d0066101eb4bf208af84aa24a1de2af15b81f0dc|auronmatrix|Tue Nov 19 22:53:30 2013|auronmatrix|Tue Nov 19 22:53:30 2013|Split Java into java and API
+7f2c3beb9473ce0b8dfba67e136ce690d7003a70|auronmatrix|Tue Nov 19 22:53:17 2013|auronmatrix|Tue Nov 19 22:53:17 2013|Split Java into java and API
+5a5efc85b72459740317246150eb3f378faabd64|auronmatrix|Tue Nov 19 21:59:40 2013|auronmatrix|Tue Nov 19 21:59:40 2013|fixed layout issues. Fixed linking issues
+4ef4e9cf63762d5efe841615978135dc883cd10d|auronmatrix|Tue Nov 19 21:33:28 2013|auronmatrix|Tue Nov 19 21:33:28 2013|fixed conflicts
+d3f16e449a1305b6eec912ab139222bd19b7d520|auronmatrix|Tue Nov 19 21:30:42 2013|auronmatrix|Tue Nov 19 21:30:42 2013|fixed conflicts
+7e0e844e08ee3ac2ef36c05490a4ad829071d965|auronmatrix|Tue Nov 19 21:28:11 2013|auronmatrix|Tue Nov 19 21:28:11 2013|Fixed template. Created basic pages and template pages
+11886d0d89a6b3c9a0915baa31803147d9bf57e1|xoosth|Tue Nov 19 15:47:04 2013|xoosth|Tue Nov 19 15:47:04 2013|added web-xml
+da1278202c5a774e81f21087c4dab8702f00a50d|xoosth|Tue Nov 19 14:24:50 2013|xoosth|Tue Nov 19 14:24:50 2013|Implemented bootstrap HTML5 template
+c212b058d9db6f7065a64c58bdf57cb7895fb8e9|auronmatrix|Mon Nov 18 16:17:46 2013|auronmatrix|Mon Nov 18 16:17:46 2013|Created working basic layout from book example
+5196382390abf83f3809220ae0554d1544ae540b|Auronspan|Wed Nov 13 00:35:43 2013|Auronspan|Wed Nov 13 00:35:43 2013|Update README.md
+142f121d9718ec4aa32563e083e4a13ac0b1eff1|auronmatrix|Wed Nov 13 00:27:47 2013|auronmatrix|Wed Nov 13 00:27:47 2013|removed unused files
+6eb9aa6f9c6a1b67ebe83c9818fd19998ea04df9|auronmatrix|Wed Nov 13 00:25:24 2013|auronmatrix|Wed Nov 13 00:25:24 2013|removed project App file
+77fc919933e1d1dcb398f5bce87f994cb80fa2ce|auronmatrix|Wed Nov 13 00:22:16 2013|auronmatrix|Wed Nov 13 00:22:16 2013|Merge branch 'master' of https://github.com/Auronspan/Survive.git
+627dc42086084a143e2ce37efe5e9d0bbabfaddf|auronmatrix|Wed Nov 13 00:18:44 2013|auronmatrix|Wed Nov 13 00:18:44 2013|Created new git web project
+75556fd4dfc2257de6c9739a5dd9158e847226f5|auronmatrix|Wed Nov 13 00:18:19 2013|auronmatrix|Wed Nov 13 00:18:19 2013|
+75e968a704c3e69e0159a089f687fb68ed95a1a7|auronmatrix|Wed Nov 13 00:18:04 2013|auronmatrix|Wed Nov 13 00:18:04 2013|Created new Maven POM project
+0ffec3948b8d59a612cad62c89449c57c3652cd8|Auronspan|Wed Nov 13 00:15:36 2013|Auronspan|Wed Nov 13 00:15:36 2013|Initial commit

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/pa165">
+  <Resource auth="Container" driverClassName="org.apache.derby.jdbc.ClientDriver" maxActive="90" maxIdle="30" name="jdbc/bottlerDs" password="pa165" removeAbandoned="true" removeAbandonedTimeout="30" type="javax.sql.DataSource" url="jdbc:derby://localhost:1527/pa165;create=true;unicode=true" username="pa165"/>
+</Context>

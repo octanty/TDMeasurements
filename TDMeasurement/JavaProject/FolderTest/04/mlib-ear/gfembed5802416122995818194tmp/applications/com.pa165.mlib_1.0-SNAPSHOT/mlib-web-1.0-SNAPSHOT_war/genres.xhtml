@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <body>
+        <ui:composition template="/template.xhtml">
+            <ui:define name="content">
+                <h1>#{msg.genres}</h1>
+                <h:messages globalOnly="true" class="message"/>
+                <h:form>
+                    <h:panelGrid columns="3">
+                        <h:outputLabel value="#{msg.genreName}: " />
+                        <h:inputText value="#{genreManager.genreTO.name}" required="true" />
+                        <h:commandButton value="#{msg.create}" action="#{genreManager.create()}" />
+                    </h:panelGrid>
+                </h:form>
+                <h:form>
+                    <c:set var="allGenres" value="#{genreManager.service.allGenres}" scope="request" />
+                    <h:dataTable value="#{allGenres}" var="g" rendered="#{not empty allGenres}">
+                        <h:column>
+                            <f:facet name="header">#{msg.genre}</f:facet>
+                                #{g.name}
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">#{msg.operation}</f:facet>
+                            <h:commandButton value="#{msg.remove}" action="#{genreManager.remove(g)}" />
+                        </h:column>
+                    </h:dataTable>
+                </h:form>
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>
+

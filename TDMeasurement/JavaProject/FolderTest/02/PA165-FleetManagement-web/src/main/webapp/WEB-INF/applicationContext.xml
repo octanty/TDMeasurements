@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc" 
+       xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"       
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:util="http://www.springframework.org/schema/util"
+       
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                            http://www.springframework.org/schema/mvc
+                            http://www.springframework.org/schema/mvc/spring-mvc.xsd
+                            http://www.springframework.org/schema/jdbc
+                            http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
+                            http://www.springframework.org/schema/data/jpa 
+                            http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+                            http://www.springframework.org/schema/tx 
+                            http://www.springframework.org/schema/tx/spring-tx.xsd
+                            http://www.springframework.org/schema/aop
+                            http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+                            http://www.springframework.org/schema/context
+                            http://www.springframework.org/schema/context/spring-context.xsd
+                            http://www.springframework.org/schema/util
+                            http://www.springframework.org/schema/util/spring-util-3.0.xsd
+"
+       default-autowire="byName"
+>
+    <util:properties id="globalProperties" location="classpath:config.properties" />
+    <context:property-placeholder properties-ref="globalProperties" />
+
+    <context:annotation-config />
+  
+    <aop:aspectj-autoproxy/>
+    <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
+
+    <context:component-scan base-package="cz.muni.fi.pa165.fleetmanagement.controller" />
+
+    <bean id="carDao" class="cz.muni.fi.pa165.fleetmanagement.dao.impl.CarDaoImpl"/>
+    <bean id="carService" class="cz.muni.fi.pa165.fleetmanagement.service.impl.CarServiceImpl" />
+       
+    <bean id="employeeDao" class="cz.muni.fi.pa165.fleetmanagement.dao.impl.EmployeeDaoImpl"/>
+    <bean id="employeeService" class="cz.muni.fi.pa165.fleetmanagement.service.impl.EmployeeServiceImpl" />
+  
+    <bean id="journeyDao" class="cz.muni.fi.pa165.fleetmanagement.dao.impl.JourneyDaoImpl"/>
+    <bean id="journeyService" class="cz.muni.fi.pa165.fleetmanagement.service.impl.JourneyServiceImpl" />
+    
+    <bean id="serviceIntervalDao" class="cz.muni.fi.pa165.fleetmanagement.dao.impl.ServiceIntervalDaoImpl"/>
+    <bean id="serviceIntervalService" class="cz.muni.fi.pa165.fleetmanagement.service.impl.ServiceIntervalServiceImpl" />    
+    
+    <!-- nastavenie prekladu-->
+    <bean id="localeChangeInterceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+        <property name="paramName" value="language" />
+    </bean>
+	
+    <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping" >
+        <property name="interceptors">
+            <list>
+                <ref bean="localeChangeInterceptor" />
+            </list>
+        </property>
+    </bean>
+	
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basename" value="Localization" />
+    </bean>
+
+    <!-- static resources mapping (images, css) -->
+    <!-- <mvc:annotation-driven />   -->
+    <mvc:resources mapping="/resources/**" location="/resources/" />
+
+    <!-- also add the following beans to get rid of some exceptions -->
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
+    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
+
+   
+</beans>

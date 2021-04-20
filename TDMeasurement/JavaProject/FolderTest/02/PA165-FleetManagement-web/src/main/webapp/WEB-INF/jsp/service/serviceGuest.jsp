@@ -1,0 +1,8 @@
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+
+<h2>Project description [EN]</h2>
+<p>Application records vehicles in fleet park of imaginary organisation. We can define service intervals for each car. Vehicle is defined by basic attributes (brand,type,manufactured date,motor type, vin, mileage). Each car has defined more service intervals, in which there is defined whether the check was ok and if yes then when it was. Car must be checked in regular intervals. If the mileage of car reach certain limit, it cannot be listed on the avilable cars list. The application should be able to add employees, who can rent cars, but limited by their class. Each employee can register his own journey, which he took and also the list of journeys and its mileage for certain time.</p>
+<h2>Zadanie projektu [SK]</h2>
+<p>Aplikácia eviduje vozidlá vo vozovom parku imaginárnej organizácie. Pre každé auto je možné definovať servisné intervaly, ktoré sú priradené k jednotlivým vozidlám. Vozidlo je definované základnými parametrami (značka, typ, rok výroby, typ motora, VIN, pocet km ...). Každému autu je priradených viac servisných intervalov, pričom sa definuje či daná kontrola prebehla, ak áno tak kedy. Auto musí íst na kontrolu v pravidelných intervaloch. Ak dosiahne určitý stav najazdených km nesmie byť dostupné pri výbere. Aplikácia bude schopná pridávať zamestnancov, ktorí si môžu auto požičať, avšak iba také, ktoré prináleží do jeho triedy zaradenia. Každému zamestnancovi je možné evidovat jazdy, ktoré absolvoval a bude možný výpis jázd, počtu km za určité obdobie.</p>

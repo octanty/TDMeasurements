@@ -1,0 +1,5 @@
+*/target/**
+*/pracovny
+*.class
+*.log
+*~*

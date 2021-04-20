@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>bottler</artifactId>
+        <groupId>cz.muni.fi.pa165.bottler</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>bottler-cmd</artifactId>
+    <name>bottler cmd client</name>
+    <description>
+        Client app for import/export data.
+        Client works with REST api
+    </description>
+
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!--
+            apache commons (http://commons.apache.org/proper/commons-cli/)
+            used for parsing command line arguments
+        -->
+        <dependency>
+            <groupId>commons-cli</groupId>
+            <artifactId>commons-cli</artifactId>
+            <version>1.2</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!--
+            jersey JAX-RS REST client
+            https://jersey.java.net/documentation/latest/client.html
+        -->
+        <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>2.4.1</version>
+        </dependency>
+
+        <!--
+            A Connector that utilizes the Apache HTTP Client to send and receive HTTP request and responses.
+            https://jersey.java.net/apidocs/2.4.1/jersey/org/glassfish/jersey/apache/connector/ApacheConnector.html
+        -->
+        <dependency>
+            <groupId>org.glassfish.jersey.connectors</groupId>
+            <artifactId>jersey-apache-connector</artifactId>
+            <version>2.4.1</version>
+        </dependency>
+
+        <!--
+            MOXy is the default and preferred way of supporting JSON binding in your Jersey applications.
+            https://jersey.java.net/documentation/latest/media.html#json.moxy
+        -->
+        <dependency>
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-moxy</artifactId>
+            <version>2.4.1</version>
+        </dependency>
+
+        <!--
+        https://github.com/FasterXML/jackson-databind/
+        -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>bottler-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <!--named of executable jar archive-->
+        <finalName>bottler-cmd</finalName>
+
+        <plugins>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <!--define where is main method (will be executed when call java -jar bottler-cmd.jar)-->
+                            <mainClass>cz.muni.fi.pa165.bottler.client.cmd.Main</mainClass>
+                            <classpathPrefix>dependency-jars/</classpathPrefix>
+                        </manifest>
+
+                    </archive>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>pack-jar-with-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+
+            <plugin>
+                <!--plugin to execute jar in maven style like this:-->
+                <!--
+                    mvn exec:java \
+                       -Dexec.mainClass="cz.muni.fi.pa165.bottler.client.cmd.Main" \
+                       -Dexec.args=" -h"
+                -->
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.2.1</version>
+
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <executable>java</executable>
+                    <mainClass>cz.muni.fi.pa165.bottler.client.cmd.Main</mainClass>
+                    <arguments>
+                        <!--hardcode command line arguments for jar execution-->
+                    </arguments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

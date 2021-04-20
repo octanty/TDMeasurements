@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="bottlerPU">  <!--transaction-type="RESOURCE_LOCAL">-->
+        <!--<provider>org.hibernate.ejb.HibernatePersistence</provider>-->
+
+        <!--define persistence classes-->
+        <!--<class>cz.muni.fi.pa165.bottler.data.model.Bottle</class>-->
+        <!--<class>cz.muni.fi.pa165.bottler.data.model.Liquor</class>-->
+        <!--<class>cz.muni.fi.pa165.bottler.data.model.Producer</class>-->
+        <!--<class>cz.muni.fi.pa165.bottler.data.model.Stamp</class>-->
+        <!--<class>cz.muni.fi.pa165.bottler.data.model.Store</class>-->
+        <!--<class>cz.muni.fi.pa165.bottler.data.model.TestResult</class>-->
+
+
+        <properties>
+            <!--db drop create strategy-->
+            <!--<property name="hibernate.hbm2ddl.auto" value="create" />-->
+
+            <!--db connection-->
+            <!--<property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/bottler;create=true" />-->
+            <!--<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver" />-->
+            <!--<property name="javax.persistence.jdbc.user" value="test" />-->
+            <!--<property name="javax.persistence.jdbc.password" value="test" />-->
+        </properties>
+    </persistence-unit>
+
+    <persistence-unit name="persistenceUnitForTests" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+        <!--define persistence classes-->
+        <class>cz.muni.fi.pa165.bottler.data.model.Bottle</class>
+        <class>cz.muni.fi.pa165.bottler.data.model.Liquor</class>
+        <class>cz.muni.fi.pa165.bottler.data.model.Producer</class>
+        <class>cz.muni.fi.pa165.bottler.data.model.Stamp</class>
+        <class>cz.muni.fi.pa165.bottler.data.model.Store</class>
+        <class>cz.muni.fi.pa165.bottler.data.model.TestResult</class>
+
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:derby:memory:unit-testing-jpa" />
+            <property name="hibernate.connection.driver_class" value="org.apache.derby.jdbc.EmbeddedDriver" />
+            <property name="hibernate.dialect" value="org.hibernate.dialect.DerbyTenSevenDialect" />
+            <property name="hibernate.hbm2ddl.auto" value="create" />
+            <property name="hibernate.connection.username" value="" />
+            <property name="hibernate.connection.password" value="" />
+        </properties>
+    </persistence-unit>
+
+</persistence>

@@ -1,0 +1,30 @@
+{
+    "href": "https://api.stormpath.com/v1/applications/3OWHseTZHKyqi9nBK2kcz0",
+    "name": "Bottler Liquor registry",
+    "description": null,
+    "status": "ENABLED",
+    "tenant": {
+        "href": "https://api.stormpath.com/v1/tenants/4M2bLC5IYKRZUkLtf5HGVa"
+    },
+    "defaultAccountStoreMapping": {
+        "href": "https://api.stormpath.com/v1/accountStoreMappings/3OWun87DSXDjUraOeiz8SE"
+    },
+    "defaultGroupStoreMapping": {
+        "href": "https://api.stormpath.com/v1/accountStoreMappings/3OWun87DSXDjUraOeiz8SE"
+    },
+    "accounts": {
+        "href": "https://api.stormpath.com/v1/applications/3OWHseTZHKyqi9nBK2kcz0/accounts"
+    },
+    "groups": {
+        "href": "https://api.stormpath.com/v1/applications/3OWHseTZHKyqi9nBK2kcz0/groups"
+    },
+    "accountStoreMappings": {
+        "href": "https://api.stormpath.com/v1/applications/3OWHseTZHKyqi9nBK2kcz0/accountStoreMappings"
+    },
+    "loginAttempts": {
+        "href": "https://api.stormpath.com/v1/applications/3OWHseTZHKyqi9nBK2kcz0/loginAttempts"
+    },
+    "passwordResetTokens": {
+        "href": "https://api.stormpath.com/v1/applications/3OWHseTZHKyqi9nBK2kcz0/passwordResetTokens"
+    }
+}

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+    <listener>
+        <listener-class>org.apache.shiro.web.env.EnvironmentLoaderListener</listener-class>
+    </listener>
+
+    <!--try to init shiro from spring xml-->
+    <filter>
+        <filter-name>shiroFilter</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+        <init-param>
+            <param-name>targetFilterLifecycle</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+    <!-- Make sure any request you want accessible to Shiro is filtered. /* catches all -->
+    <!-- requests.  Usually this filter mapping is defined first (before all others) to -->
+    <!-- ensure that Shiro works in subsequent filters in the filter chain:             -->
+    <filter-mapping>
+        <filter-name>shiroFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+            classpath:applicationContext.xml
+        </param-value>
+    </context-param>
+
+    <resource-ref>
+        <description>Datasource</description>
+        <res-ref-name>jdbc/bottlerDs</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+    
+    <!-- JSTL -->
+    <context-param>
+        <description>JSTL tags will use localized string from the same source as Stripes</description>
+        <param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+        <param-value>StripesResources</param-value>
+    </context-param>
+    
+    
+    <!-- jersery -->
+    <servlet>
+        <servlet-name>jersey-serlvet</servlet-name>
+        <servlet-class>
+            com.sun.jersey.spi.spring.container.servlet.SpringServlet
+        </servlet-class>
+        <init-param>
+            <param-name>
+                com.sun.jersey.config.property.packages
+            </param-name>
+            <param-value>cz.muni.fi.pa165.bottler.rest</param-value>
+        </init-param>
+        <init-param>
+            <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>jersey-serlvet</servlet-name>
+        <url-pattern>/rest/*</url-pattern>
+    </servlet-mapping>
+    
+
+    
+    <!-- Stripes -->
+    <filter>
+        <description>Stripes main conf</description>
+        <display-name>Stripes Filter</display-name>
+        <filter-name>StripesFilter</filter-name>
+        <filter-class>net.sourceforge.stripes.controller.StripesFilter</filter-class>
+        <init-param>
+            <description>where Stripes searches for ActionBeans</description>
+            <param-name>ActionResolver.Packages</param-name>
+            <param-value>cz.muni.fi.pa165.bottler.web</param-value>
+        </init-param>
+        <init-param>
+            <description>locales and encodings in the app</description>
+            <param-name>LocalePicker.Locales</param-name>
+            <param-value>cs:utf-8,en:utf-8</param-value>
+        </init-param>
+        <init-param>
+            <description>Stripes injects Spring beans</description>
+            <param-name>Interceptor.Classes</param-name>
+            <param-value>net.sourceforge.stripes.integration.spring.SpringInterceptor</param-value>
+        </init-param>
+    </filter>
+    
+
+
+    <filter-mapping>
+        <filter-name>StripesFilter</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+
+    <filter>
+        <display-name>Stripes Dynamic Mapping Filter</display-name>
+        <filter-name>DynamicMappingFilter</filter-name>
+        <filter-class>net.sourceforge.stripes.controller.DynamicMappingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>DynamicMappingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>INCLUDE</dispatcher>
+    </filter-mapping>
+
+
+    <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>cz.muni.fi.pa165.bottler.web.EncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+
+    
+    
+</web-app>

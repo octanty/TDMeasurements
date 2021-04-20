@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:rich="http://richfaces.org/rich">
+    <body>
+        <ui:composition template="/template.xhtml">
+            <ui:define name="content">
+                <h1>#{msg.songs}</h1>
+                <h:messages globalOnly="true" class="message"/>
+                
+                <h:form>
+                    <h:button value="#{msg.create}" outcome="/song_create" rendered="#{loginManager.loggedIn}">
+                    </h:button>
+                </h:form>
+                
+                <c:set var="allSongs" value="#{songManager.songService.allSongs}" scope="request" />
+                <rich:dataGrid value="#{allSongs}" var="s" columns="4" elements="20" rendered="#{not empty allSongs}" styleClass="grid" >
+                     <rich:panel>
+                        <f:facet name="header">
+                            <h:button value="#{s.title}" outcome="/song_detail">
+                                    <f:param name="song_title" value="#{s.title}"/>
+                            </h:button>
+                        </f:facet>
+                        <h:panelGrid columns="2">
+                            <h:outputText style="font-weight: bold" value="#{msg.artist}: "></h:outputText>
+                            <h:outputText value="#{s.artist.name}" />
+                            <h:outputText style="font-weight: bold" value="#{msg.album}: "></h:outputText>
+                            <h:outputText value="#{s.album.title}" />
+                            <h:outputText style="font-weight: bold" value="#{msg.genre}: "></h:outputText>
+                            <h:outputText value="#{s.genre.name}" />
+                        </h:panelGrid>                      
+                    </rich:panel>
+                    <f:facet name="footer">
+                        <rich:dataScroller></rich:dataScroller>
+                    </f:facet>
+                </rich:dataGrid>
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>
+

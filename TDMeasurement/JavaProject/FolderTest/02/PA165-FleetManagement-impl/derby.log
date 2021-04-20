@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Jan 26 21:52:33 CET 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-0143-d053-3a6c-000000734b28 
+on database directory C:\Users\Lubomir\Music\Projekt od janciho spojeny somnou\PA165-FleetManagement\PA165-FleetManagement-impl\target\database\message with class loader sun.misc.Launcher$AppClassLoader@1398044 
+Loaded from file:/C:/Users/Lubomir/.m2/repository/org/apache/derby/derby/10.10.1.1/derby-10.10.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_40-b43
+user.dir=C:\Users\Lubomir\Music\Projekt od janciho spojeny somnou\PA165-FleetManagement\PA165-FleetManagement-impl
+os.name=Windows 7
+os.arch=x86
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

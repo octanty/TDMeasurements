@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--@author Josef Ludvicek <374268@mail.muni.cz>-->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:jee="http://www.springframework.org/schema/jee" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
+
+
+    <!--browse sources for anotations-->
+    <context:component-scan base-package="cz.muni.fi.pa165.bottler" />
+
+    <!--get datasource from server-->
+    <jee:jndi-lookup id="dataSource" jndi-name="jdbc/bottlerDs" />
+
+    <!--populate db with sample data-->
+    <jdbc:initialize-database>
+        <jdbc:script location="classpath:init-db-data.sql" encoding="UTF-8"/>
+    </jdbc:initialize-database>
+
+
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="jpaVendorAdapter" ref="jpaVendor" />
+        <property name="persistenceUnitName" value="bottlerPU" />
+        <property name="jpaProperties">
+            <props>
+                <prop key="hibernate.hbm2ddl.auto">create-drop</prop>
+                <prop key="hibernate.dialect">org.hibernate.dialect.DerbyTenSevenDialect</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--configure spring transaction manager-->
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory" />
+    </bean>
+
+    <!-- enable the configuration of transactional behavior based on annotations -->
+    <tx:annotation-driven transaction-manager="transactionManager" />
+
+    <!--set hibernate as jpa provider-->
+    <bean id="jpaVendor" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" />
+
+    <bean id="stormPathGroupResolver" class="com.stormpath.shiro.realm.DefaultGroupRoleResolver">
+        <property name="modeNames" value="name"/>
+    </bean>
+
+    <bean id="stormpathClientBuilder" class="com.stormpath.sdk.client.ClientBuilder" >
+        <property name="apiKeyFileLocation" value="classpath:apiKey.properties"/>
+    </bean>
+
+    <bean id="stormPathClient" class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+        <property name="targetObject" ref="stormpathClientBuilder"/>
+        <property name="targetMethod" value="build"/>
+    </bean>
+
+    <!--setup Stormpath realm for shiro-->
+    <bean id="stormPathRealm" class="com.stormpath.shiro.realm.ApplicationRealm">
+        <property name="client" ref="stormPathClient"/>
+        <property name="applicationRestUrl" value="https://api.stormpath.com/v1/applications/3OWHseTZHKyqi9nBK2kcz0"/>
+        <property name="groupRoleResolver" ref="stormPathGroupResolver"/>
+    </bean>
+
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <!-- Single realm app.  If you have multiple realms, use the 'realms' property instead. -->
+        <property name="realm" ref="stormPathRealm"/>
+        <!-- By default the servlet container sessions will be used.  Uncomment this line
+             to use shiro's native sessions (see the JavaDoc for more): -->
+        <!-- <property name="sessionMode" value="native"/> -->
+    </bean>
+
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <property name="securityManager" ref="securityManager"/>
+        <!--setup login url (shiro.loginUrl in shiro.ini)        -->
+        <property name="loginUrl" value="/login.jsp"/>
+
+
+        <property name="filterChainDefinitions">
+            <value>
+                #shiro.ini => urls section
+                /login.jsp = authc
+                /logout = logout
+                /auth/** = authc
+
+                /producers/** = authc, roles[police]
+
+                /bottles/** = authc, roles[tester]
+                /testresults/** = authc, roles[tester]
+
+
+                /monitoring = authc, roles[admin]
+                /liquors/** = authc, roles[admin]
+                /stamps/** = authc, roles[admin]
+            </value>
+        </property>
+    </bean>
+
+</beans>

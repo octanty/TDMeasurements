@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:rich="http://richfaces.org/rich">
+    <body>
+        <ui:composition template="/template.xhtml">
+            <ui:define name="content">
+                <h1>#{a.title}</h1>
+                <h:messages globalOnly="true"/>
+                <c:if test="#{not empty param['album_name']}">
+                    <c:set var="a" value="#{albumManager.init(param['album_name'])}" scope="request" />
+                </c:if>
+                <c:if test="#{empty param['album_name']}">
+                    <c:set var="a" value="#{albumManager.init()}" scope="request" />
+                </c:if>
+                <h:form>
+                    <h:panelGrid columns="2">
+                        <h:outputLabel style="font-weight: bold" value="#{msg.released}: " />
+                        <h:outputLabel value="#{a.released}" />                        
+                    </h:panelGrid>
+                    
+                    <h:button value="#{msg.updateOrDelete}" outcome="/album_edit" rendered="#{loginManager.loggedIn}">
+                            <f:param name="album_name" value="#{a.title}"/>
+                    </h:button>
+                    
+                </h:form>
+                
+                <h2>#{msg.songs}</h2>
+
+                <h:form>
+                    <c:set var="songs" value="#{songManager.getSongsInAlbum(a)}" scope="request" />
+                    <h:dataTable value="#{songs}" var="song" rendered="#{not empty songs}">
+                        <h:column>
+                            <f:facet name="header">#{msg.songPosition}</f:facet>
+                                #{song.position}
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">#{msg.songTitle}</f:facet>
+                            <h:button value="#{song.title}" outcome="song_detail">
+                                    <f:param name="song_title" value="#{song.title}"/>
+                            </h:button>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">#{msg.artist}</f:facet>
+                            <h:button value="#{song.artist.name}" outcome="artist_detail">
+                                    <f:param name="artist_name" value="#{song.artist.name}"/>
+                            </h:button>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">#{msg.genre}</f:facet>
+                                #{song.genre.name}
+                        </h:column>
+                    </h:dataTable>
+                </h:form>
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>
+

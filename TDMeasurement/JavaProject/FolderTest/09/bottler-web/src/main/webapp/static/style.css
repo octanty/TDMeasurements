@@ -1,0 +1,43 @@
+tr.with-button td{
+    line-height: 2 !important;
+}
+
+#producerEditForm{
+
+    width:600px;
+
+}
+
+.tablesorter-bootstrap{
+    margin:20px auto;
+}
+
+.tablesorter-filter.disabled{
+    display:none;
+}
+
+.table .row-link{
+    cursor:pointer;
+
+}
+
+.table .row-link .no-link{
+    cursor:default;
+
+}
+
+
+.table .row-link a:not(.btn){
+    color:#333;
+    text-decoration: none;
+}
+
+input.error, select.error{
+    background-color: #f2dede;
+    background-image: -webkit-gradient(linear,left 0,left 100%,from(#f2dede),to(#e7c3c3));
+    background-image: -webkit-linear-gradient(top,#f2dede 0,#e7c3c3 100%);
+    background-image: -moz-linear-gradient(top,#f2dede 0,#e7c3c3 100%);
+    background-image: linear-gradient(to bottom,#f2dede 0,#e7c3c3 100%);
+    background-repeat: repeat-x;
+    color: #b94a48;
+}

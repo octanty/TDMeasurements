@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:rich="http://richfaces.org/rich">
+    
+    <body>
+        <ui:composition template="/template.xhtml">
+            <ui:define name="content">
+                <h:messages globalOnly="true"/>
+                
+                <c:if test="#{not empty param['album_name']}">
+                    <c:set var="a" value="#{albumManager.init(param['album_name'])}" scope="request" />
+                    <h1>#{albumManager.albumTO.title}</h1>
+                </c:if>
+                <c:if test="#{empty param['album_name']}">
+                    <c:set var="a" value="#{albumManager.init()}" scope="request" />
+                    <h1>#{msg.newAlbum}</h1>
+                </c:if>
+                
+                <h:form>
+                    <h:panelGrid columns="2">
+                        <h:outputLabel value="#{msg.title}: " />
+                        <h:inputText value="#{a.title}" required="#{empty param['album_name']}" readonly="#{not empty param['album_name'] or !loginManager.loggedIn}" />
+                        <h:outputLabel value="#{msg.released}: " />
+                        <h:inputText value="#{a.released}" required="false" readonly="#{!loginManager.loggedIn}" />                        
+                    </h:panelGrid>
+                    <h:commandButton value="#{msg.create}" action="#{albumManager.create}" rendered="#{empty param['album_name'] and loginManager.loggedIn}" />                   
+                </h:form>
+
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>
+

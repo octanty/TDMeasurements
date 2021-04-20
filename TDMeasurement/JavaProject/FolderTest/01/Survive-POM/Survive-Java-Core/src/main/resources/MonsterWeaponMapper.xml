@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+          
+  <mapping wildcard="false"> 
+    <class-a>com.muni.fi.pa165.dto.MonsterWeaponDto</class-a>
+    <class-b>com.muni.fi.pa165.entities.MonsterWeapon</class-b>   
+    <field>  
+      <a>monster</a>
+      <b>monster</b>
+      <a-deep-index-hint>com.muni.fi.pa165.dto.MonsterDto</a-deep-index-hint>
+      <b-deep-index-hint>com.muni.fi.pa165.entities.Monster</b-deep-index-hint>
+     
+    </field>
+    <field>
+      <a>weapon</a>
+      <b>weapon</b>
+      <a-deep-index-hint>com.muni.fi.pa165.dto.WeaponDto</a-deep-index-hint>
+      <b-deep-index-hint>com.muni.fi.pa165.entities.Weapon</b-deep-index-hint>
+     
+    </field> 
+    <field>
+      <a>hitRate</a>
+      <b>hitRate</b>
+    </field>
+    <field>
+      <a>damage</a>
+      <b>damage</b>
+    </field>  
+     <field>
+      <a>efficiency</a>
+      <b>efficiency</b>
+    </field> 
+    <field>
+        <a>description</a>
+        <b>description</b>
+    </field>
+
+  </mapping> 
+</mappings>
+

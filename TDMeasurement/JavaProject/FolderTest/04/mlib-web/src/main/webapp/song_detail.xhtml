@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <body>
+        <ui:composition template="/template.xhtml">
+            <ui:define name="content">
+                <h:messages globalOnly="true" class="message"/>
+                
+                <c:if test="#{not empty param['song_title']}">
+                    <c:set var="s" value="#{songManager.init(param['song_title'])}" scope="request" />
+                </c:if>
+                <c:if test="#{empty param['song_title']}">
+                    <c:set var="s" value="#{songManager.initNew(param['song_album'])}" scope="request" />
+                </c:if>
+
+                <h1>#{s.title}</h1>
+                <p>#{s.commentary}</p>
+                
+                <h:form>
+                    <h:panelGrid columns="2">                       
+                        <h:outputLabel style="font-weight: bold" value="#{msg.artist}: " />
+                        <h:button value="#{s.artist.name}" outcome="artist_detail">
+                                <f:param name="artist_name" value="#{s.artist.name}"/>
+                        </h:button>
+
+                        <h:outputLabel style="font-weight: bold" value="#{msg.album}: " />
+                        <h:button value="#{s.album.title}" outcome="album_detail">
+                                <f:param name="album_name" value="#{s.album.title}"/>
+                        </h:button>
+
+                        <h:outputLabel style="font-weight: bold" value="#{msg.songPosition}: " />
+                        <h:outputLabel value="#{s.position}" />
+
+                        <h:outputLabel style="font-weight: bold" value="#{msg.genre}: " />
+                        <h:outputLabel value="#{s.genre.name} " />
+
+                        <h:outputLabel style="font-weight: bold" value="#{msg.bitrate}: " />
+                        <h:outputLabel value="#{s.bitrate}" />
+
+                    </h:panelGrid>
+                    
+                    <h:button value="#{msg.updateOrDelete}" outcome="/song_edit" rendered="#{loginManager.loggedIn}">
+                            <f:param name="song_title" value="#{s.title}"/>
+                    </h:button>
+                </h:form>
+               
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>
+

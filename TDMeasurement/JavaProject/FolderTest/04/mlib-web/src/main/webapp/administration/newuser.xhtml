@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <body>
+        <ui:composition template="/template.xhtml">
+            <ui:define name="content">
+                <h1>#{msg.newuser}</h1>
+                <h:messages globalOnly="true"/>
+
+                <h:form id="newUserForm">
+                    <h:panelGrid columns="1">
+                        <h:outputLabel value="#{msg.username}:" />
+                        <h:inputText id="username" value="#{credentialsManager.username}">
+                            <f:validateLength minimum="4" maximum="10" />
+                        </h:inputText>
+                        <h:outputLabel value="#{msg.password}:" />
+                        <h:inputSecret id="password" value="#{credentialsManager.password}">
+                            <f:validateLength minimum="6" />
+                        </h:inputSecret>
+                        <h:outputText value="#{msg.role}:" />
+                        <h:selectOneRadio value="#{credentialsManager.role}">
+                            <f:selectItems value="#{loginManager.allRoles}" var="r" itemLabel="#{r}" itemValue="#{r}" />
+                        </h:selectOneRadio>
+                    </h:panelGrid>
+                    <h:commandButton id="register" value="#{msg.register}"
+                                     action="#{loginManager.register}"/>
+                </h:form>
+
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>
+

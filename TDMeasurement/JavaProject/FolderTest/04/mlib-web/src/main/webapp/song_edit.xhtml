@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <body>
+        <ui:composition template="/template.xhtml">
+            <ui:define name="content">
+                <h:messages globalOnly="true" class="message"/>
+                
+                <c:if test="#{not empty param['song_title']}">
+                    <c:set var="s" value="#{songManager.init(param['song_title'])}" scope="request" />
+                </c:if>
+                <c:if test="#{empty param['song_title']}">
+                    <c:set var="s" value="#{songManager.initNew(param['song_album'])}" scope="request" />
+                </c:if>
+
+                <h1>#{s.title}</h1>
+                <h:form>
+                    <h:inputHidden value="#{s.title}" required="true" />
+                    <h:panelGrid columns="2">                       
+                        <h:outputLabel value="#{msg.artist}: " />
+                        <h:selectOneMenu value="#{songManager.artist}" readonly="#{!loginManager.loggedIn}">
+                            <f:selectItems value="#{songManager.artistService.allArtists}" var="ar" itemLabel="#{ar.name}" itemValue="#{ar.name}" />
+                        </h:selectOneMenu>
+
+                        <h:outputLabel value="#{msg.album}: " />
+                        <h:selectOneMenu value="#{songManager.album}" readonly="#{!loginManager.loggedIn}">
+                            <f:selectItems value="#{songManager.albumService.allAlbums}" var="a" itemLabel="#{a.title}" itemValue="#{a.title}" />
+                        </h:selectOneMenu>
+
+                        <h:outputLabel value="#{msg.songPosition}: " />
+                        <h:inputText value="#{s.position}" required="false" />
+
+                        <h:outputLabel value="#{msg.genre}: " />
+                        <h:selectOneMenu value="#{songManager.genre}" readonly="#{!loginManager.loggedIn}">
+                            <f:selectItems value="#{songManager.genreService.allGenres}" var="g" itemLabel="#{g.name}" itemValue="#{g.name}" />
+                        </h:selectOneMenu>
+
+                        <h:outputLabel value="#{msg.bitrate}: " />
+                        <h:inputText value="#{s.bitrate}" required="false" readonly="#{!loginManager.loggedIn}" />
+
+                        <h:outputLabel value="#{msg.commentary}: " />
+                        <h:inputText value="#{s.commentary}" required="false" readonly="#{!loginManager.loggedIn}" />
+
+                    </h:panelGrid>
+                    <h:commandButton value="#{msg.update}" action="#{songManager.updateSong}" rendered="#{loginManager.loggedIn}" />
+                    <h:commandButton value="#{msg.remove}" action="#{songManager.removeSong}" rendered="#{loginManager.loggedIn}" />
+                </h:form>
+               
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>
+
